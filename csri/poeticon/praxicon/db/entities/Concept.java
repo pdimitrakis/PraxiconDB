@@ -25,6 +25,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
@@ -42,9 +43,8 @@ import javax.xml.bind.annotation.XmlTransient;
 import javax.xml.bind.annotation.XmlType;
 
 /**
- *
- * @author Erevodifwntas
  * @author Dimitris Mavroeidis
+ * 
  */
 
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -52,7 +52,15 @@ import javax.xml.bind.annotation.XmlType;
 @XmlRootElement(name="concept", namespace = "http://www.csri.gr/concept")
 @Entity
 //@EntityListeners(ConceptListener.class)
-@NamedQuery(name = "findAllConcepts", query= "select c from Concept c")
+@NamedQueries({
+    @NamedQuery(name = "findAllConcepts", query= "SELECT c FROM Concept c"),
+    @NamedQuery(name = "findConceptsByNameExact", query= "SELECT c FROM Concept c WHERE c.Name = :concept_name"),
+    @NamedQuery(name = "findConceptsByName", query= "SELECT c FROM Concept c WHERE c.Name LIKE :concept_name"),
+    @NamedQuery(name = "findConceptsByLanguageRepresentation", 
+            query= "SELECT c FROM Concept c WHERE c.LanguageRepresentations.Text LIKE :lr_name"),
+    @NamedQuery(name = "findConceptsByLanguageRepresentationExact", 
+            query= "SELECT c FROM Concept c WHERE c.LanguageRepresentations.Text = :lr_name"),
+})
 @Table(name="Concepts") //, Definition = "SMALLINT UNSIGNED COMMENT 'The Concept table. This is the key table of the database'")
 //@ConceptConstraint(groups=ConceptGroup.class)
 public class Concept implements Serializable
@@ -110,7 +118,7 @@ public class Concept implements Serializable
     private static final long serialVersionUID = 1L;
 
     @Id
-    @XmlElement(required = true)
+    //@XmlElement(required = true)
     @SequenceGenerator(name="CUST_SEQ", allocationSize=1)
     @GeneratedValue(strategy = GenerationType.AUTO, generator="CUST_SEQ")
     @Column(name="ConceptId")
@@ -119,36 +127,36 @@ public class Concept implements Serializable
     @Column(name="Name")
     //@Size(min = 5, max = 14)
     //@XmlElement(required = true)
-    @NotNull(message="Concept name must be specified.")
+    //@NotNull(message="Concept name must be specified.")
     String Name;
 
     @Column(name="Type")
     //@XmlElement(required = true)
-    @NotNull(message="Concept type must be specified.")
+    //@NotNull(message="Concept type must be specified.")
     @Enumerated(EnumType.STRING)
     protected type ConceptType;
 
     @Column(name="SpecificityLevel")
     //@XmlElement(required = true)
-    @NotNull(message="Specificity level must be specified.")
+    //@NotNull(message="Specificity level must be specified.")
     @Enumerated(EnumType.STRING)
     protected specificity_level SpecificityLevel;
 
     @Column(name="Status")
     //@XmlElement(required = true)
-    @NotNull(message="Concept status must be specified.")
+    //@NotNull(message="Concept status must be specified.")
     @Enumerated(EnumType.STRING)
     protected status Status;
     
     @Column(name="UniqueInstance")
     //@XmlElement(required = false)
-    @NotNull(message="Concept unique instance must be specified.")
+    //@NotNull(message="Concept unique instance must be specified.")
     @Enumerated(EnumType.STRING)
     protected unique_instance UniqueInstance;
 
     @Column(name="PragmaticStatus")
     //@XmlElement(required = false)
-    @NotNull(message="Concept pragmatic status must be specified.")
+    //@NotNull(message="Concept pragmatic status must be specified.")
     @Enumerated(EnumType.STRING)
     protected pragmatic_status PragmaticStatus;
 
@@ -321,7 +329,7 @@ public class Concept implements Serializable
      *     xmldescription="This tag defines the type of the concept entity
      *     (abstract, entity, feature, movement, unknown)"
      */
-    @XmlElement(name="concept_type")
+    //@XmlElement(name="concept_type")
     public type getConceptType()
     {
         return ConceptType;
@@ -343,7 +351,7 @@ public class Concept implements Serializable
      *	   xmltag="&lt;specificity_level&gt;"
      *     xmldescription="This tag defines the specificity level of the concept"
      */
-    @XmlElement(name="specificity_level")
+    //@XmlElement(name="specificity_level")
     public specificity_level getSpecificityLevel()
     {
         return SpecificityLevel;
@@ -381,7 +389,7 @@ public class Concept implements Serializable
      *     xmldescription="This tag defines if the entity is a variable,
      *                     a constant or a template"
      */
-    @XmlElement(name="status")
+    //@XmlElement(name="status")
     //@ConstantConcepts(value=status.CONSTANT)
     public status getStatus()
     {
@@ -407,7 +415,7 @@ public class Concept implements Serializable
      *     xmldescription="This tag defines the source of the concept (from which
      *          resources was generated (for example: Wordnet)"
      */
-    @XmlElement(name="unique_instance")
+    //@XmlElement(name="unique_instance")
     public unique_instance getUniqueInstance()
     {
         return UniqueInstance;
@@ -424,7 +432,7 @@ public class Concept implements Serializable
      *	   xmltag="&lt;pragmatic_status&gt;"
      *     xmldescription="This tag defines if the entity is literal or figurative"
      */
-    @XmlElement(name="pragmatic_status")
+    //@XmlElement(name="pragmatic_status")
     public pragmatic_status getPragmaticStatus()
     {
         return PragmaticStatus;
@@ -451,7 +459,7 @@ public class Concept implements Serializable
      *     xmldescription="This tag defines the source of the concept (from which
      *          resources was generated (for example: Wordnet)"
      */
-    @XmlElement(name="source")
+    //@XmlElement(name="source")
     public String getSource()
     {
         return Source;
@@ -468,7 +476,7 @@ public class Concept implements Serializable
      * 
      * 
      */
-    @XmlElement(name="comment")
+    //@XmlElement(name="comment")
     public String getComment()
     {
         return Comment;
@@ -483,7 +491,7 @@ public class Concept implements Serializable
      * @return the language representations of the concept
      * 
      */
-    @XmlElement(name="language_representation")
+    //@XmlElement(name="language_representation")
     public final List<LanguageRepresentation> getLanguageRepresentations()
     {
         return LanguageRepresentations;
@@ -551,7 +559,7 @@ public class Concept implements Serializable
      *     xmldescription="This tag defines the Visual Representation of the
      *     concept"
      */
-    @XmlElement(name="visual_representation")
+    //@XmlElement(name="visual_representation")
     public List<VisualRepresentation> getVisualRepresentations()
     {
         return VisualRepresentations;
@@ -598,7 +606,7 @@ public class Concept implements Serializable
      *	   xmltag="&lt;motoric_representation&gt;"
      *     xmldescription="This tag defines the motoric representation"
      */
-    @XmlElement(name="motoric_representation")
+    //@XmlElement(name="motoric_representation")
     public final List<MotoricRepresentation> getMotoricRepresentations()
     {
         return MotoricRepresentations;
@@ -647,7 +655,7 @@ public class Concept implements Serializable
      *     xmldescription="This tag defines the intersection of relation chains
      *     this concept participates in"
      */
-    @XmlElement(name="intersection_of_relation_chains")
+    //@XmlElement(name="intersection_of_relation_chains")
     public final List<IntersectionOfRelationChains> getIntersectionsOfRelationChains()
     {
         return IntersectionsOfRelationChains;
@@ -828,48 +836,48 @@ public class Concept implements Serializable
     }
 
     public void afterUnmarshal(Unmarshaller u, Object parent) {
-
-        if (Globals.ToMergeAfterUnMarshalling)
-        {
+//
+//        if (Globals.ToMergeAfterUnMarshalling)
+//        {
             ConceptDao cDao = new ConceptDaoImpl();
             Concept tmp = cDao.getConceptWithNameOrID(this.getName());
-            if (tmp == null)
-            {
-                if (this.ConceptType == null)
-                {
-                    this.ConceptType = type.UNKNOWN;
-                }
-
+//            if (tmp == null)
+//            {
+//                if (this.ConceptType == null)
+//                {
+//                    this.ConceptType = type.UNKNOWN;
+//                }
+//
                 cDao.merge(this);
-            }
-            else
-            {
-                cDao.update(this);
-            }
-        }
-        else
-        {
-            Concept tmp = (Concept)Constants.globalConcepts.get(this.getName());
-            if (tmp == null)
-            {
-                if (this.ConceptType == null)
-                {
-                    this.ConceptType = type.UNKNOWN;
-                }
-                tmp = new Concept(this);
-                Constants.globalConcepts.put(tmp.getName(), tmp);
-            }
-            else
-            {
-                tmp.ConceptType = this.ConceptType;
-                updateLanguageRepresentations(tmp);
-                updateVisualRepresentations(tmp);
-                updateMotoricRepresentations(tmp);
-                updateObjOfRelations(tmp);
-                updateRelations(tmp);
-              }
-        }
-
+//            }
+//            else
+//            {
+//                cDao.update(this);
+//            }
+//        }
+//        else
+//        {
+//            Concept tmp = (Concept)Constants.globalConcepts.get(this.getName());
+//            if (tmp == null)
+//            {
+//                if (this.ConceptType == null)
+//                {
+//                    this.ConceptType = type.UNKNOWN;
+//                }
+//                tmp = new Concept(this);
+//                Constants.globalConcepts.put(tmp.getName(), tmp);
+//            }
+//            else
+//            {
+//                tmp.ConceptType = this.ConceptType;
+//                updateLanguageRepresentations(tmp);
+//                updateVisualRepresentations(tmp);
+//                updateMotoricRepresentations(tmp);
+//                updateObjOfRelations(tmp);
+//                updateRelations(tmp);
+//              }
+//        }
+//
         System.err.println("Finish unmarshalling: " + this.getName());
     }
 }
