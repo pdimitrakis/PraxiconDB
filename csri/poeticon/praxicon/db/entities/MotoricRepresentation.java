@@ -28,14 +28,12 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * 
- * @author Erevodifwntas
- * @author Erevodifwntas
+ * @author Dimitris Mavroeidis
  *
  */
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "motoric_representation", namespace = "http://www.csri.gr/motoric_representation")
-@XmlRootElement(name="motoric_representation", namespace = "http://www.csri.gr/motoric_representation")
 @Entity
 @Table(name="MotoricRepresentations")
 public class MotoricRepresentation implements Serializable
@@ -55,6 +53,7 @@ public class MotoricRepresentation implements Serializable
     @Id
     @SequenceGenerator(name="CUST_SEQ", allocationSize=1)
     @GeneratedValue(strategy = GenerationType.AUTO, generator="CUST_SEQ")
+    @Column(name="MotoricRepresentationId")
     private Long Id;
 
     @Column(name="PerformingAgent")
@@ -120,7 +119,7 @@ public class MotoricRepresentation implements Serializable
 //        this.owner = owner;
 //    }
 
-    @XmlElement(name = "comment")
+    //@XmlElement(name = "comment")
     public String getComment()
     {
         return Comment;

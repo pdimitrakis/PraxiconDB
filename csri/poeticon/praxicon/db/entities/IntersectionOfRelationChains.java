@@ -43,7 +43,6 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "intersection_of_relation_chains", namespace = "http://www.csri.gr/intersection_of_relation_chains")
-@XmlRootElement(name="intersection_of_relation_chains", namespace = "http://www.csri.gr/intersection_of_relation_chains")
 @Entity
 @Table(name="IntersectionsOfRelationChains")
 public class IntersectionOfRelationChains implements Serializable
@@ -107,7 +106,7 @@ public class IntersectionOfRelationChains implements Serializable
      *	   xmltag="&lt;relation_chain&gt;"
      *     xmldescription="This tag defines a relation"
      */
-    @XmlElement(name="relation_chain")
+    //@XmlElement(name="relation_chain")
     public List<RelationChain> getRelationChains()
     {
         return RelationChains;
@@ -125,7 +124,7 @@ public class IntersectionOfRelationChains implements Serializable
      *	   xmltag="&lt;Language_representation_names&gt;"
      *     xmldescription="This tag defines the names of the LanguageRepresentationGroup that should be used to express this intersection"
      */
-   @XmlElement(name="language_representation_names")
+    //@XmlElement(name="language_representation_names")
     public List<String> getLanguageRepresentationNames_()
     {
        List<String> language_representation_names_ = new ArrayList<>();
@@ -167,7 +166,7 @@ public class IntersectionOfRelationChains implements Serializable
         this.Id = id;
     }
 
-    @XmlElement(name = "name")
+    //@XmlElement(name = "name")
     public String getName()
     {
         return Name;

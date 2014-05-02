@@ -20,6 +20,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -31,8 +33,8 @@ import javax.xml.bind.annotation.XmlType;
  * @author Dimitris Mavroeidis
  *
  */
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "relation_type", namespace = "http://www.csri.gr/relation_type")
-@XmlRootElement(name="relation_type", namespace = "http://www.csri.gr/relation_type")
 @Entity
 @Table(name="RelationTypes")
 public class RelationType implements Serializable
@@ -86,6 +88,7 @@ public class RelationType implements Serializable
     @Id
     @SequenceGenerator(name="CUST_SEQ", allocationSize=1)
     @GeneratedValue(strategy = GenerationType.AUTO, generator="CUST_SEQ")
+    @Column(name="RelationTypeId")
     private Long Id;
 
     @Column(name="ForwardName")
@@ -203,6 +206,7 @@ public class RelationType implements Serializable
      * is not a relation_name). This isn't stored in the db
      * @param name The forward name of the relation
      */
+    @XmlTransient
     public void setForwardNameString(String name)
     {
         String tmp = name.replaceAll("-", "_");
@@ -228,7 +232,8 @@ public class RelationType implements Serializable
      *     xmldescription="The name of the relation when the relational triplet
      *     is used from left to right"
      */
-    @XmlAttribute(name="left-to-right_name")
+    //@XmlAttribute(name="left-to-right_name")
+    
     public String getForwardNameString()
     {
         if(ForwardName !=null && !ForwardName.name().equalsIgnoreCase(""))
@@ -282,7 +287,7 @@ public class RelationType implements Serializable
      *     xmldescription="The name of the relation when the relational triplet
      *     is used from left to right"
      */
-    @XmlAttribute(name="right-to-left_name")
+    //@XmlAttribute(name="right-to-left_name")
     public String getBackwardNameString()
     {
         if(BackwardName !=null && !BackwardName.name().equalsIgnoreCase(""))

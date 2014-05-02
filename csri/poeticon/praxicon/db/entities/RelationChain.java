@@ -34,9 +34,8 @@ import javax.xml.bind.annotation.XmlType;
  * @author Dimitris Mavroeidis
  * 
  */
-//@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "relation_chain", namespace = "http://www.csri.gr/relation_chain")
-@XmlRootElement(name="relation_chain", namespace = "http://www.csri.gr/relation_chain")
 @Entity
 @Table(name="RelationChains")
 public class RelationChain implements Serializable
@@ -44,7 +43,7 @@ public class RelationChain implements Serializable
     private static final long serialVersionUID = 1L;
     @Id
     @Column(name="RelationChainId", nullable=false)
-    @SequenceGenerator(name="CUST_SEQ", sequenceName="RelationChainIdSeq",  allocationSize=1)
+    @SequenceGenerator(name="CUST_SEQ", allocationSize=1)
     @GeneratedValue(strategy = GenerationType.AUTO, generator="CUST_SEQ")
 
     private Long Id;
@@ -80,7 +79,7 @@ public class RelationChain implements Serializable
         LanguageRepresentationNames = new ArrayList<>();
     }
 
-    @XmlElement(name = "name")
+    //@XmlElement(name = "name")
     public String getName()
     {
         return name;
@@ -105,7 +104,7 @@ public class RelationChain implements Serializable
      *                     LanguageRepresentation that should be used to
      *                     express this relation chain"
      */
-    @XmlElement(name = "language_representation_names")
+    //@XmlElement(name = "language_representation_names")
     public List<String> getLanguageRepresentationNames_()
     {
        List<String> language_representation_names_ = new ArrayList<>();
@@ -126,7 +125,7 @@ public class RelationChain implements Serializable
      *	   xmltag="&lt;relation_order&gt;"
      *     xmldescription="This tag defines the relations of the entity
      */
-    @XmlElement(name = "relation")
+    //@XmlElement(name = "relation")
     public List<RelationChain_Relation> getRelations()
     {
         return Relations;

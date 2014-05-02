@@ -17,7 +17,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -25,8 +28,8 @@ import javax.xml.bind.annotation.XmlType;
  *
  * @author dmavroeidis
  */
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "verbalization", namespace = "http://www.csri.gr/verbalization")
-@XmlRootElement(name="verbalization", namespace = "http://www.csri.gr/verbalization")
 @Entity
 @Table(name="Verbalizations")
 public class Verbalization implements Serializable {
@@ -66,11 +69,42 @@ public class Verbalization implements Serializable {
     public Long getId() {
         return Id;
     }
-
     public void setId(Long id) {
         this.Id = id;
     }
 
+    //@XmlElement(name="verbalization_allowed")
+    public allowed getVerbalizationAllowed(){
+        return Allowed;
+    }
+    public void setAllowed(allowed allowed){
+        this.Allowed = allowed;
+    }
+    
+    //@XmlElement(name="concept")
+    public Concept getConcept() {
+        return Concept;
+    }
+    public void setConcept(Concept concept){
+        this.Concept = concept;
+    }
+    
+    //@XmlElement(name="language_representation")
+    public LanguageRepresentation getLanguageRepresentation() {
+        return LanguageRepresentation;
+    }
+    public void setLanguageRepresentation(LanguageRepresentation language_representation){
+        this.LanguageRepresentation = language_representation;
+    }
+    
+    //@XmlElement(name="relation")
+    public Relation getRelation(){
+        return Relation;
+    }
+    public void setRelation(Relation relation){
+        this.Relation = relation;
+    }
+    
     @Override
     public int hashCode() {
         int hash = 0;

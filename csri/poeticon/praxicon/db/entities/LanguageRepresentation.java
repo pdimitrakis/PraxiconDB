@@ -6,8 +6,11 @@
 package csri.poeticon.praxicon.db.entities;
 import csri.poeticon.praxicon.Globals;
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -41,7 +44,6 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "language_representation", namespace = "http://www.csri.gr/language_representation")
-@XmlRootElement(name="language_representation", namespace = "http://www.csri.gr/language_representation")
 @Entity
 @Table(name="LanguageRepresentations")
 public class LanguageRepresentation implements Serializable
@@ -181,7 +183,7 @@ public class LanguageRepresentation implements Serializable
      *	   xmltag="&lt;constituents&gt;"
      *     xmldescription="This tag defines the constituents of a composite word or multiword"
      */
-    @XmlElement(name = "constituents")
+    //@XmlElement(name = "constituents")
     public List<Constituents> getConstituents()
     {
         List<Constituents> constituents = new ArrayList<>();
@@ -198,7 +200,6 @@ public class LanguageRepresentation implements Serializable
             }
         return constituents;
     }
-
     public void setConstituents(List<Constituents> constituents)
     {
         this.Constituents = constituents;
@@ -210,12 +211,11 @@ public class LanguageRepresentation implements Serializable
      *	   xmltag="&lt;is_compositional&gt;"
      *     xmldescription="This tag defines if the LanguageRepresentation is compositional or not"
      */
-    @XmlElement(name = "is_compositional")
+    //@XmlElement(name = "is_compositional")
     public is_compositional isCompositional()
     {
         return IsCompositional;
     }
-
     public void setCompositional(is_compositional is_compositional)
     {
         this.IsCompositional = is_compositional;
@@ -228,19 +228,23 @@ public class LanguageRepresentation implements Serializable
      *	   xmltag="&lt;language&gt;"
      *     xmldescription="This tag defines the language of the entry"
      */
-    @XmlElement(name="language")
+    //@XmlElement(name="language")
     public language getLanguage()
     {
         return Language;
     }
-
+    public void setLanguage(language language)
+    {
+        this.Language = language;
+    }
+    
     /**
      * @return the part of speech of the language representation.
      * @xmlcomments.args
      *	   xmltag="&lt;part_of_speech&gt;"
      *     xmldescription="This tag defines the Part Of Speech of the entry"
      */
-    @XmlElement(name="part_of_speech")
+    //@XmlElement(name="part_of_speech")
     public part_of_speech getPartOfSpeech()
     {
         return PartOfSpeech;
@@ -287,18 +291,13 @@ public class LanguageRepresentation implements Serializable
         LanguageRepresentation.language_representations = language_representations;
     }
 
-    public void setLanguage(language language)
-    {
-        this.Language = language;
-    }
-
     /**
      * @return Text.
      * @xmlcomments.args
      *	   xmltag="&lt;text&gt;"
      *     xmldescription="This tag defines the text of the entry"
      */
-    @XmlElement(name = "text")
+    //@XmlElement(name = "text")
     public String getText()
     {
         return Text;
@@ -360,12 +359,12 @@ public class LanguageRepresentation implements Serializable
     {
         if (!Globals.ToMergeAfterUnMarshalling)
         {
-          /*  try {
+            try {
                 String tmp = new String(this.getText().getBytes(), "UTF-8");
                 this.setText(tmp);
             } catch (UnsupportedEncodingException ex) {
-                Logger.getLogger(LanguageEntry.class.getName()).log(Level.SEVERE, null, ex);
-            }*/
+                Logger.getLogger(LanguageRepresentation.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 }

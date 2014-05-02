@@ -18,6 +18,7 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -28,7 +29,6 @@ import javax.xml.bind.annotation.XmlType;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "constituent", namespace="http://www.csri.gr/constituent")
-@XmlRootElement(name="constituent", namespace="http://www.csri.gr/constituent")
 @Entity
 @Table(name="Constituents")
 public class Constituents implements Serializable {
@@ -54,10 +54,19 @@ public class Constituents implements Serializable {
     public Long getId() {
         return Id;
     }
-
     public void setId(Long id) {
         this.Id = id;
     }
+    
+    //@XmlElement(name="order")
+    public Short getOrder(){
+        return Order;
+    }
+    public void setOrder(Short order){
+        this.Order = order;
+    }
+    
+    
 
     @Override
     public int hashCode() {

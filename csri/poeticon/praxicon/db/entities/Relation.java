@@ -48,9 +48,6 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "relation", namespace = "http://www.csri.gr/relation")
-@XmlRootElement(name="relation", namespace = "http://www.csri.gr/relation")
-
-//@XmlAccessorType(XmlAccessType.NONE)
 @Entity
 @Table(name="Relations")
 public class Relation implements Serializable
@@ -84,12 +81,12 @@ public class Relation implements Serializable
 
     @ManyToOne(optional=false, cascade=CascadeType.ALL)
     // @JoinColumn(name="ConceptId")
-    @NotNull(message="Concept Id name must be specified.")
+    @NotNull(message="Concept Id for Object in Relation must be specified.")
     private Concept Object;
 
     @ManyToOne(optional=false, cascade=CascadeType.ALL)
     // @JoinColumn(name="ConceptId")
-    @NotNull(message="Concept Id must be specified.")
+    @NotNull(message="Concept Id for Subject in Relation must be specified.")
     private Concept Subject;
 
     @Column(name="DerivationSupported")
@@ -169,15 +166,31 @@ public class Relation implements Serializable
      */
     //@XmlAttribute(name="subject")
     
-    @XmlElement(name = "subject")
+    //@XmlElement(name = "subject")
     public Concept getSubject()
     {
         return Subject;
     }
-
     public void setSubject(Concept subject)
     {
         this.Subject = subject;
+    }
+    
+
+    /**
+     * @xmlcomments.args
+     *	   xmltag="object"
+     *     xmldescription="This attribute defines the object that the
+     *                     relation is related to"
+     */
+    //@XmlElement(name = "object")
+    public Concept getObject()
+    {
+        return Object;
+    }
+    public void setObject(Concept object)
+    {
+        this.Object = object;
     }
 
     /**
@@ -202,29 +215,10 @@ public class Relation implements Serializable
     public List<RelationChain_Relation> getMainFunctions()
     {
         return MainFunctions;
-    }
-
+    }    
     public void setMainFunctions(List<RelationChain_Relation> main_functions)
     {
         this.MainFunctions = main_functions;
-    }
-
-   
-    @XmlElement(name = "object")
-    /**
-     * @xmlcomments.args
-     *	   xmltag="object"
-     *     xmldescription="This attribute defines the object that the
-     *                     relation is related to"
-     */
-    public Concept getObject()
-    {
-        return Object;
-    }
-
-    public void setObject(Concept object)
-    {
-        this.Object = object;
     }
 
     /**
@@ -233,7 +227,7 @@ public class Relation implements Serializable
      *	   xmltag="&lt;relation_type&gt;"
      *     xmldescription="This tag defines the type of the relation"
      */
-    @XmlElement(name = "relation_type")
+    //@XmlElement(name = "relation_type")
     public RelationType getType()
     {
         return Type;
@@ -274,7 +268,7 @@ public class Relation implements Serializable
         this.Id = id;
     }
 
-    @XmlElement(name = "comment")
+    //@XmlElement(name = "comment")
     public String getComment()
     {
         return Comment;
@@ -299,7 +293,7 @@ public class Relation implements Serializable
     *                     that should be used to express the Object in this
     *                     relation"
     */
-   @XmlElement(name = "language_representation_object")
+   //@XmlElement(name = "language_representation_object")
     public String getLanguageRepresentationObject_()
     {
         String language_representation_object_;
@@ -336,7 +330,7 @@ public class Relation implements Serializable
      *                     that should be used to express the Object
      *                     in this relation"
      */
-    @XmlElement(name = "motoric_representation_object")
+    //@XmlElement(name = "motoric_representation_object")
     public List<String> getMotoricRepresentationObject_()
     {
         List<String> motoric_representation_object_ = new ArrayList<>();

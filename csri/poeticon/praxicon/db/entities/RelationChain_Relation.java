@@ -33,7 +33,6 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlType(name = "relationchain_relation", namespace = "http://www.csri.gr/relationchain_relation")
-@XmlRootElement(name="relationchain_relation", namespace = "http://www.csri.gr/relationchain_relation")
 @Entity
 @Table(name="RelationChains_Relations")
 public class RelationChain_Relation implements Serializable
@@ -57,7 +56,7 @@ public class RelationChain_Relation implements Serializable
     @Column(name="RelationOrder")
     long RelationOrder;
 
-    @XmlElement(name = "relation")
+    //@XmlElement(name = "relation")
     public Relation getRelation()
     {
         return Relation;
@@ -86,7 +85,7 @@ public class RelationChain_Relation implements Serializable
      *     xmldescription="This attribute marks that the order of the relation
      *                      in the relation chain
      */
-    @XmlElement(name="relation_order")
+    //@XmlElement(name="relation_order")
     public long getRelationOrder()
     {
         return RelationOrder;
