@@ -38,7 +38,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * @author Dimitris Mavroeidis
- * 
+ *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "concept", namespace = "http://www.csri.gr/concept")
@@ -46,15 +46,20 @@ import javax.xml.bind.annotation.XmlType;
 @Entity
 //@EntityListeners(ConceptListener.class)
 @NamedQueries({
-    @NamedQuery(name = "findAllConcepts", query= "SELECT c FROM Concept c"),
-    @NamedQuery(name = "findConceptsByNameExact", query= "SELECT c FROM Concept c WHERE c.Name = :concept_name"),
-    @NamedQuery(name = "findConceptsByName", query= "SELECT c FROM Concept c WHERE c.Name LIKE :concept_name"),
-    @NamedQuery(name = "findConceptsByLanguageRepresentation", 
-            query= "SELECT c FROM Concept c WHERE c.LanguageRepresentations.Text LIKE :lr_name"),
-    @NamedQuery(name = "findConceptsByLanguageRepresentationExact", 
-            query= "SELECT c FROM Concept c WHERE c.LanguageRepresentations.Text = :lr_name"),
-})
-@Table(name="Concepts") //, Definition = "SMALLINT UNSIGNED COMMENT 'The Concept table. This is the key table of the database'")
+    @NamedQuery(name = "findAllConcepts", query = "SELECT c FROM Concept c"),
+    @NamedQuery(name = "findConceptsByNameExact", query =
+            "SELECT c FROM Concept c WHERE c.Name = :concept_name"),
+    @NamedQuery(name = "findConceptsByName", query =
+            "SELECT c FROM Concept c WHERE c.Name LIKE :concept_name"),
+    @NamedQuery(name = "findConceptsByLanguageRepresentation",
+            query =
+            "SELECT c FROM Concept c " +
+                    "WHERE c.LanguageRepresentations.Text LIKE :lr_name"),
+    @NamedQuery(name = "findConceptsByLanguageRepresentationExact",
+            query =
+            "SELECT c FROM Concept c " +
+                    "WHERE c.LanguageRepresentations.Text = :lr_name"),})
+@Table(name = "Concepts")
 //@ConceptConstraint(groups=ConceptGroup.class)
 public class Concept implements Serializable {
 
@@ -316,8 +321,7 @@ public class Concept implements Serializable {
      * movement, unknown)"
      */
     //@XmlElement(name="concept_type")
-    public type getConceptType()
-    {
+    public type getConceptType() {
         return ConceptType;
     }
 
@@ -335,8 +339,7 @@ public class Concept implements Serializable {
      * tag defines the specificity level of the concept"
      */
     //@XmlElement(name="specificity_level")
-    public specificity_level getSpecificityLevel()
-    {
+    public specificity_level getSpecificityLevel() {
         return SpecificityLevel;
     }
 
@@ -383,8 +386,7 @@ public class Concept implements Serializable {
      *         resources was generated (for example: Wordnet)"
      */
     //@XmlElement(name="unique_instance")
-    public unique_instance getUniqueInstance()
-    {
+    public unique_instance getUniqueInstance() {
         return UniqueInstance;
     }
 
@@ -398,8 +400,7 @@ public class Concept implements Serializable {
      * tag defines if the entity is literal or figurative"
      */
     //@XmlElement(name="pragmatic_status")
-    public pragmatic_status getPragmaticStatus()
-    {
+    public pragmatic_status getPragmaticStatus() {
         return PragmaticStatus;
     }
 
@@ -421,8 +422,7 @@ public class Concept implements Serializable {
      *         (for example: Wordnet)"
      */
     //@XmlElement(name="source")
-    public String getSource()
-    {
+    public String getSource() {
         return Source;
     }
 
@@ -437,8 +437,7 @@ public class Concept implements Serializable {
      *
      */
     //@XmlElement(name="comment")
-    public String getComment()
-    {
+    public String getComment() {
         return Comment;
     }
 
@@ -451,8 +450,7 @@ public class Concept implements Serializable {
      *
      */
     //@XmlElement(name="language_representation")
-    public final List<LanguageRepresentation> getLanguageRepresentations()
-    {
+    public final List<LanguageRepresentation> getLanguageRepresentations() {
         return LanguageRepresentations;
     }
 
@@ -522,8 +520,7 @@ public class Concept implements Serializable {
      *         concept"
      */
     //@XmlElement(name="visual_representation")
-    public List<VisualRepresentation> getVisualRepresentations()
-    {
+    public List<VisualRepresentation> getVisualRepresentations() {
         return VisualRepresentations;
     }
 
@@ -569,8 +566,7 @@ public class Concept implements Serializable {
      *         xmldescription="This tag defines the motoric representation"
      */
     //@XmlElement(name="motoric_representation")
-    public final List<MotoricRepresentation> getMotoricRepresentations()
-    {
+    public final List<MotoricRepresentation> getMotoricRepresentations() {
         return MotoricRepresentations;
     }
 
@@ -619,8 +615,8 @@ public class Concept implements Serializable {
      * concept participates in"
      */
     //@XmlElement(name="intersection_of_relation_chains")
-    public final List<IntersectionOfRelationChains> getIntersectionsOfRelationChains()
-    {
+    public final List<IntersectionOfRelationChains> 
+        getIntersectionsOfRelationChains() {
         return IntersectionsOfRelationChains;
     }
 
@@ -775,7 +771,7 @@ public class Concept implements Serializable {
             // + " (Entity)";
         } else {
             List<LanguageRepresentation> tmpList =
-                     this.getLanguageRepresentationsEntries();
+                    this.getLanguageRepresentationsEntries();
             if (tmpList.size() > 0) {
                 StringBuilder tmp = new StringBuilder(tmpList.get(0).getText());
                 for (int i = 1; i < tmpList.size(); i++) {
@@ -792,8 +788,8 @@ public class Concept implements Serializable {
 //
 //        if (Globals.ToMergeAfterUnMarshalling)
 //        {
-            ConceptDao cDao = new ConceptDaoImpl();
-            Concept tmp = cDao.getConceptWithNameOrID(this.getName());
+        ConceptDao cDao = new ConceptDaoImpl();
+        Concept tmp = cDao.getConceptWithNameOrID(this.getName());
 //            if (tmp == null)
 //            {
 //                if (this.ConceptType == null)
@@ -801,7 +797,7 @@ public class Concept implements Serializable {
 //                    this.ConceptType = type.UNKNOWN;
 //                }
 //
-                cDao.merge(this);
+        cDao.merge(this);
 //            }
 //            else
 //            {
