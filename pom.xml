@@ -32,8 +32,9 @@
                     </execution>
                 </executions>
                 <configuration>
+
                     <transformSchemas>
-                        <!--
+                    <!--                        
                             Each schema element defines:
 
                             a) A <<namespace uri>> for one of your namespaces.
@@ -53,7 +54,13 @@
 
                             c) The desired <<toFile>> name of the generated XML schema definition file,
                                excluding the ".xsd" suffix (which will be added automatically).
-                        -->
+                       
+                        <transformSchema>
+                            <uri>http://www.csri.gr/collection_of_concepts</uri>
+                            <toPrefix>collection_of_concepts</toPrefix>
+                            <toFile>/home/dmavroeidis/work/praxicondb/xsd/collection_of_concepts.xsd</toFile>
+                        </transformSchema>
+                       -->
                         <transformSchema>
                             <uri>http://www.csri.gr/concept</uri>
                             <toPrefix>concept</toPrefix>
@@ -114,9 +121,8 @@
                             <toPrefix>verbalization</toPrefix>
                             <toFile>/home/dmavroeidis/work/praxicondb/xsd/verbalization.xsd</toFile>
                         </transformSchema>
-
-
                     </transformSchemas>
+
                     <includes>
                         <include>**/*.java</include>
                     </includes>
@@ -130,7 +136,7 @@
                 <extensions>true</extensions>
             </plugin>
         </plugins>
-    </build>
+    </build>    
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -203,5 +209,4 @@
             <type>jar</type>
         </dependency>
     </dependencies>
-    
 </project>
