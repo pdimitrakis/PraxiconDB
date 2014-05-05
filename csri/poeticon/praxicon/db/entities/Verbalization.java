@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package csri.poeticon.praxicon.db.entities;
 
 import java.io.Serializable;
@@ -20,8 +19,6 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
@@ -31,80 +28,85 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "verbalization", namespace = "http://www.csri.gr/verbalization")
 @Entity
-@Table(name="Verbalizations")
+@Table(name = "Verbalizations")
 public class Verbalization implements Serializable {
 
-    public static enum allowed
-    {
-        YES, NO, UNKNOWN ;
+    public static enum allowed {
+
+        YES, NO, UNKNOWN;
+
         @Override
-        public String toString()
-        {
+        public String toString() {
             return this.name();
         }
     }
 
     private static final long serialVersionUID = 1L;
     @Id
-    @SequenceGenerator(name="CUST_SEQ", allocationSize=1)
-    @GeneratedValue(strategy = GenerationType.AUTO, generator="CUST_SEQ")
-    @Column(name="VerbalizationId")
+    @SequenceGenerator(name = "CUST_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "CUST_SEQ")
+    @Column(name = "VerbalizationId")
     private Long Id;
 
-    @Column(name="Allowed")
+    @Column(name = "Allowed")
     @Enumerated(EnumType.STRING)
     private allowed Allowed;
 
-    @OneToOne(cascade=CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private Concept Concept;
 
-    @OneToOne(cascade=CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private LanguageRepresentation LanguageRepresentation;
 
-    @OneToOne(cascade=CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL)
     private Relation Relation;
-
 
     @XmlAttribute
     public Long getId() {
         return Id;
     }
+
     public void setId(Long id) {
         this.Id = id;
     }
 
     //@XmlElement(name="verbalization_allowed")
-    public allowed getVerbalizationAllowed(){
+    public allowed getVerbalizationAllowed() {
         return Allowed;
     }
-    public void setAllowed(allowed allowed){
+
+    public void setAllowed(allowed allowed) {
         this.Allowed = allowed;
     }
-    
+
     //@XmlElement(name="concept")
     public Concept getConcept() {
         return Concept;
     }
-    public void setConcept(Concept concept){
+
+    public void setConcept(Concept concept) {
         this.Concept = concept;
     }
-    
+
     //@XmlElement(name="language_representation")
     public LanguageRepresentation getLanguageRepresentation() {
         return LanguageRepresentation;
     }
-    public void setLanguageRepresentation(LanguageRepresentation language_representation){
+
+    public void setLanguageRepresentation(
+            LanguageRepresentation language_representation) {
         this.LanguageRepresentation = language_representation;
     }
-    
+
     //@XmlElement(name="relation")
-    public Relation getRelation(){
+    public Relation getRelation() {
         return Relation;
     }
-    public void setRelation(Relation relation){
+
+    public void setRelation(Relation relation) {
         this.Relation = relation;
     }
-    
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -118,8 +120,9 @@ public class Verbalization implements Serializable {
         if (!(object instanceof Verbalization)) {
             return false;
         }
-        Verbalization other = (Verbalization) object;
-        if ((this.Id == null && other.Id != null) || (this.Id != null && !this.Id.equals(other.Id))) {
+        Verbalization other = (Verbalization)object;
+        if ((this.Id == null && other.Id != null) ||
+                (this.Id != null && !this.Id.equals(other.Id))) {
             return false;
         }
         return true;
@@ -127,6 +130,7 @@ public class Verbalization implements Serializable {
 
     @Override
     public String toString() {
-        return "csri.poeticon.praxicon.db.entities.Verbalization[id=" + Id + "]";
+        return "csri.poeticon.praxicon.db.entities.Verbalization[id=" + Id +
+                "]";
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:compositionality="http://www.csri.gr/compositionality" xmlns:concept="http://www.csri.gr/concept" xmlns:constituent="http://www.csri.gr/constituent" xmlns:intersection_of_relation_chains="http://www.csri.gr/intersection_of_relation_chains" xmlns:language_representation="http://www.csri.gr/language_representation" xmlns:relation="http://www.csri.gr/relation" xmlns:relation_chain="http://www.csri.gr/relation_chain" targetNamespace="http://www.csri.gr/constituent" version="1.0">
 
-  <xs:import schemaLocation="schema13.xsd"/>
+  <xs:import schemaLocation="schema15.xsd"/>
 
   <xs:import namespace="http://www.csri.gr/concept" schemaLocation="/home/dmavroeidis/work/praxicondb/xsd/concept.xsd"/>
 
@@ -15,12 +15,13 @@
 
   <xs:import namespace="http://www.csri.gr/language_representation" schemaLocation="/home/dmavroeidis/work/praxicondb/xsd/language_representation.xsd"/>
 
-  <xs:complexType name="constituents">
+  <xs:complexType name="constituent">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Id" type="xs:long"/>
-      <xs:element minOccurs="0" name="Order" type="xs:short"/>
-      <xs:element minOccurs="0" name="ConstituentLanguageRepresentation" type="language_representation:language_representation"/>
-      <xs:element minOccurs="0" name="LanguageRepresentation" type="language_representation:language_representation"/>
+      <xs:element form="qualified" minOccurs="0" name="Id" type="xs:long"/>
+      <xs:element form="qualified" minOccurs="0" name="Order" type="xs:short"/>
+      <xs:element form="qualified" minOccurs="0" name="ConstituentLanguageRepresentation" type="language_representation:language_representation"/>
+      <xs:element form="qualified" minOccurs="0" name="LanguageRepresentation" type="language_representation:language_representation"/>
     </xs:sequence>
+    <xs:attribute name="id" type="xs:long"/>
   </xs:complexType>
 </xs:schema>

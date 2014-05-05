@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://www.csri.gr/relation" xmlns:ns2="http://www.csri.gr" xmlns:ns1="http://www.csri.gr/relationchain_relation" xmlns:ns4="http://www.csri.gr/language_representation" xmlns:ns3="http://www.csri.gr/relation_type" xmlns:tns="http://www.csri.gr/relation" xmlns:ns9="http://www.csri.gr/relation_chain" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns5="http://www.csri.gr/visual_representation" xmlns:ns6="http://www.csri.gr/motoric_representation" xmlns:ns7="http://www.csri.gr/intersection_of_relation_chains" xmlns:ns10="http://www.csri.gr/constituent" xmlns:ns8="http://www.csri.gr/concept" xmlns:ns11="http://www.csri.gr/compositionality">
+
+  <xs:import namespace="http://www.csri.gr/relationchain_relation" schemaLocation="schema2.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr" schemaLocation="schema12.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/relation_type" schemaLocation="schema3.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/language_representation" schemaLocation="schema7.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/visual_representation" schemaLocation="schema1.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/motoric_representation" schemaLocation="schema6.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/intersection_of_relation_chains" schemaLocation="schema8.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/concept" schemaLocation="schema10.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/relation_chain" schemaLocation="schema4.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/constituent" schemaLocation="schema9.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/compositionality" schemaLocation="schema11.xsd"/>
+
+  <xs:complexType name="relation">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:long" form="qualified" minOccurs="0"/>
+      <xs:element name="Comment" type="xs:string" form="qualified" minOccurs="0"/>
+      <xs:element name="MainFunctions" type="ns1:relationchain_relation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Type" type="ns3:relation_type" form="qualified" minOccurs="0"/>
+      <xs:element name="Object" type="ns8:concept" form="qualified" minOccurs="0"/>
+      <xs:element name="Subject" type="ns8:concept" form="qualified" minOccurs="0"/>
+      <xs:element name="DerivationSupported" type="ns2:derivationSupported" form="qualified" minOccurs="0"/>
+      <xs:element name="LanguageRepresentationSubject" type="ns4:language_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="LanguageRepresentationObject" type="ns4:language_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="MotoricRepresentationSubject" type="ns6:motoric_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="MotoricRepresentationObject" type="ns6:motoric_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="VisualRepresentationSubject" type="ns5:visual_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="VisualRepresentationObject" type="ns5:visual_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:long"/>
+  </xs:complexType>
+</xs:schema>
+

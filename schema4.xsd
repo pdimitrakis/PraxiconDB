@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://www.csri.gr/relation_chain" xmlns:ns2="http://www.csri.gr/concept" xmlns:ns1="http://www.csri.gr" xmlns:ns4="http://www.csri.gr/intersection_of_relation_chains" xmlns:ns3="http://www.csri.gr/language_representation" xmlns:tns="http://www.csri.gr/relation_chain" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns5="http://www.csri.gr/relation" xmlns:ns6="http://www.csri.gr/relationchain_relation" xmlns:ns7="http://www.csri.gr/constituent" xmlns:ns8="http://www.csri.gr/compositionality">
+
+  <xs:import namespace="http://www.csri.gr" schemaLocation="schema12.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/concept" schemaLocation="schema10.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/language_representation" schemaLocation="schema7.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/intersection_of_relation_chains" schemaLocation="schema8.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/relation" schemaLocation="schema5.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/relationchain_relation" schemaLocation="schema2.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/constituent" schemaLocation="schema9.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/compositionality" schemaLocation="schema11.xsd"/>
+
+  <xs:complexType name="relation_chain">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:long" form="qualified" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" form="qualified" minOccurs="0"/>
+      <xs:element name="IntersectionsOfRelationChains" type="ns4:intersection_of_relation_chains" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Relations" type="ns6:relationchain_relation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="LanguageRepresentationNames" type="ns3:language_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:long"/>
+  </xs:complexType>
+</xs:schema>
+

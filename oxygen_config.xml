@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <schemaSystemId>file:/home/dmavroeidis/work/praxicondb/schema10.xsd</schemaSystemId>
+    <documentRoot>concept</documentRoot>
+    <outputFolder>/home/dmavroeidis/work/praxicondb</outputFolder>
+    <filenamePrefix>praxicon_xml_instance</filenamePrefix>
+    <filenameExtension>xml</filenameExtension>
+    <noOfInstances>1</noOfInstances>
+    <openFirstInstance>true</openFirstInstance>
+    <defaultNamespace>&lt;NO_NAMESPACE></defaultNamespace>
+    <valuesMaxLength>30</valuesMaxLength>
+    <isUseIncrementalNamesForValues>true</isUseIncrementalNamesForValues>
+    <discardOptionalElementsAfterNestedLevel>6</discardOptionalElementsAfterNestedLevel>
+    <namespaceMapping ns="http://www.csri.gr/relation_type" proxy="ns8"/>
+    <namespaceMapping ns="http://www.csri.gr/compositionality" proxy="ns10"/>
+    <namespaceMapping ns="http://www.csri.gr/motoric_representation" proxy="ns6"/>
+    <namespaceMapping ns="http://www.csri.gr/visual_representation" proxy="ns5"/>
+    <namespaceMapping ns="http://www.csri.gr/relation" proxy="ns7"/>
+    <namespaceMapping ns="http://www.csri.gr/relation_chain" proxy="ns3"/>
+    <namespaceMapping ns="http://www.csri.gr/relationchain_relation" proxy="ns2"/>
+    <namespaceMapping ns="http://www.csri.gr/constituent" proxy="ns9"/>
+    <namespaceMapping ns="http://www.csri.gr/intersection_of_relation_chains" proxy="tns"/>
+    <namespaceMapping ns="http://www.csri.gr/concept" proxy="concept"/>
+    <namespaceMapping ns="http://www.csri.gr/language_representation" proxy="ns4"/>
+    <namespaceMapping ns="http://www.csri.gr" proxy="ns1"/>
+    <element namespace="&lt;ANY>" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/relation" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/intersection_of_relation_chains" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/relation_chain" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/concept" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/motoric_representation" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/constituent" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/compositionality" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/language_representation" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/relationchain_relation" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/visual_representation" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+    <element namespace="http://www.csri.gr/relation_type" name="&lt;ANY>">
+        <generateOptionalElements>true</generateOptionalElements>
+        <generateOptionalAttributes>true</generateOptionalAttributes>
+        <valuesForContentType>RANDOM</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>RANDOM</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+</settings>

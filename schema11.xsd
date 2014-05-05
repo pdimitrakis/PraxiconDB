@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://www.csri.gr/compositionality" xmlns:ns2="http://www.csri.gr/concept" xmlns:ns1="http://www.csri.gr" xmlns:ns4="http://www.csri.gr/relation_chain" xmlns:ns3="http://www.csri.gr/relation" xmlns:tns="http://www.csri.gr/compositionality" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns5="http://www.csri.gr/intersection_of_relation_chains" xmlns:ns6="http://www.csri.gr/constituent" xmlns:ns7="http://www.csri.gr/language_representation">
+
+  <xs:import namespace="http://www.csri.gr" schemaLocation="schema12.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/concept" schemaLocation="schema10.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/relation" schemaLocation="schema5.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/relation_chain" schemaLocation="schema4.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/intersection_of_relation_chains" schemaLocation="schema8.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/constituent" schemaLocation="schema9.xsd"/>
+
+  <xs:import namespace="http://www.csri.gr/language_representation" schemaLocation="schema7.xsd"/>
+
+  <xs:complexType name="compositionality">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:long" form="qualified" minOccurs="0"/>
+      <xs:element name="CompositionalityType" type="ns1:compositionalityType" form="qualified" minOccurs="0"/>
+      <xs:element name="LanguageRepresentation" type="ns7:language_representation" form="qualified" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:long"/>
+  </xs:complexType>
+</xs:schema>
+

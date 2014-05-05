@@ -1,25 +1,21 @@
 package csri.poeticon.praxicon;
 
-import csri.poeticon.praxicon.db.dao.RelationDao;
-import csri.poeticon.praxicon.db.dao.implSQL.RelationDaoImpl;
-import csri.poeticon.praxicon.db.entities.CollectionOfConcepts;
 import csri.poeticon.praxicon.db.entities.Concept;
-import csri.poeticon.praxicon.db.entities.Relation;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.util.*;
-import javax.xml.bind.*;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 
 /**
  *
  * @author Erevodifwntas
  *
- * This is used to load data from an xml. The path to the xml is given as an argument
- * "-f <pathToXML>"
+ * This is used to load data from an xml. The path to the xml is given as an
+ * argument "-f <pathToXML>"
  */
 public class LoadXML 
 {
@@ -63,7 +59,9 @@ public class LoadXML
 //        {
 //            if(args.length == 1)
 //            {
-//                Reader reader = new InputStreamReader(new FileInputStream(new File(args[0])));
+//                Reader reader =
+//                      new InputStreamReader(
+//                      new FileInputStream(new File(args[0])));
 //                Unmarshaller u = context.createUnmarshaller();
 //                c =(CollectionOfConcepts)u.unmarshal(reader);
 //                c.storeEverything();
@@ -85,4 +83,5 @@ public class LoadXML
 //            }
 //        }
     }
+
 }

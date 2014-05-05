@@ -135,6 +135,14 @@
                 <version>3.13</version>
                 <extensions>true</extensions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.12.1</version>
+                <configuration>
+                    <configLocation>checkstyle.xml</configLocation>
+                </configuration>
+            </plugin>
         </plugins>
     </build>    
     
@@ -208,5 +216,26 @@
             <version>2.2.7</version>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>checkstyle</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>5.0</version>
+        </dependency>
     </dependencies>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.12.1</version>
+                    <reportSets>
+                        <reportSet>
+                            <reports>
+                                <report>checkstyle</report>
+                            </reports>
+                      </reportSet>
+                </reportSets>
+            </plugin>
+          </plugins>
+    </reporting>
 </project>

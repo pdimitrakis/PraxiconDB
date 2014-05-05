@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package csri.poeticon.praxicon.db.entities;
 
 import java.io.Serializable;
@@ -18,55 +17,53 @@ import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 /**
  *
  * @author dmavroeidis
  */
-
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "constituent", namespace="http://www.csri.gr/constituent")
+@XmlType(name = "constituent", namespace = "http://www.csri.gr/constituent")
 @Entity
-@Table(name="Constituents")
+@Table(name = "Constituents")
 public class Constituents implements Serializable {
+
     private static final long serialVersionUID = 1L;
     @Id
-    @SequenceGenerator(name="CUST_SEQ", allocationSize=1)
-    @GeneratedValue(strategy = GenerationType.AUTO, generator="CUST_SEQ")
-    @Column(name="ConstituentId")
+    @SequenceGenerator(name = "CUST_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "CUST_SEQ")
+    @Column(name = "ConstituentId")
     private Long Id;
 
-    @Column(name="ConstituentOrder")
+    @Column(name = "ConstituentOrder")
     private Short Order;
 
     // Foreign key
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private LanguageRepresentation ConstituentLanguageRepresentation;
 
     // Foreign key
-    @ManyToOne(cascade=CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     private LanguageRepresentation LanguageRepresentation;
 
     @XmlAttribute
     public Long getId() {
         return Id;
     }
+
     public void setId(Long id) {
         this.Id = id;
     }
-    
+
     //@XmlElement(name="order")
-    public Short getOrder(){
+    public Short getOrder() {
         return Order;
     }
-    public void setOrder(Short order){
+
+    public void setOrder(Short order) {
         this.Order = order;
     }
-    
-    
 
     @Override
     public int hashCode() {
@@ -77,12 +74,13 @@ public class Constituents implements Serializable {
 
     @Override
     public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
+        // TODO: Warning - method won't work in case the id fields are not set
         if (!(object instanceof Constituents)) {
             return false;
         }
-        Constituents other = (Constituents) object;
-        if ((this.Id == null && other.Id != null) || (this.Id != null && !this.Id.equals(other.Id))) {
+        Constituents other = (Constituents)object;
+        if ((this.Id == null && other.Id != null) ||
+                (this.Id != null && !this.Id.equals(other.Id))) {
             return false;
         }
         return true;

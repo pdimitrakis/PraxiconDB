@@ -1,0 +1,2094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<ns1:concept
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:ns1='http://www.csri.gr/concept'
+    xsi:schemaLocation='http://www.csri.gr/concept file:/home/dmavroeidis/work/praxicondb/schema10.xsd'>
+    <Id></Id>
+    <Name></Name>
+    <ConceptType></ConceptType>
+    <SpecificityLevel></SpecificityLevel>
+    <Status></Status>
+    <UniqueInstance></UniqueInstance>
+    <PragmaticStatus></PragmaticStatus>
+    <Source></Source>
+    <Comment></Comment>
+    <LanguageRepresentations id="">
+        <ns2:Id></ns2:Id>
+        <ns2:Language></ns2:Language>
+        <ns2:PartOfSpeech></ns2:PartOfSpeech>
+        <ns2:IsCompositional></ns2:IsCompositional>
+        <ns2:Text></ns2:Text>
+        <ns2:Comment></ns2:Comment>
+        <ns2:Concepts id="" name="">
+            <Id></Id>
+            <Name></Name>
+            <ConceptType></ConceptType>
+            <SpecificityLevel></SpecificityLevel>
+            <Status></Status>
+            <UniqueInstance></UniqueInstance>
+            <PragmaticStatus></PragmaticStatus>
+            <Source></Source>
+            <Comment></Comment>
+            <VisualRepresentations id="">
+                <ns3:media_type></ns3:media_type>
+                <ns3:visual_representation></ns3:visual_representation>
+                <ns3:uri></ns3:uri>
+            </VisualRepresentations>
+            <VisualRepresentations id="">
+                <ns3:media_type></ns3:media_type>
+                <ns3:visual_representation></ns3:visual_representation>
+                <ns3:uri></ns3:uri>
+            </VisualRepresentations>
+            <VisualRepresentations id="">
+                <ns3:media_type></ns3:media_type>
+                <ns3:visual_representation></ns3:visual_representation>
+                <ns3:uri></ns3:uri>
+            </VisualRepresentations>
+            <MotoricRepresentations id="">
+                <ns4:Id></ns4:Id>
+                <ns4:PerformingAgent></ns4:PerformingAgent>
+                <ns4:URI></ns4:URI>
+                <ns4:Comment></ns4:Comment>
+                <ns4:Concept id="" name="">
+                    <Id></Id>
+                    <Name></Name>
+                    <ConceptType></ConceptType>
+                    <SpecificityLevel></SpecificityLevel>
+                    <Status></Status>
+                    <UniqueInstance></UniqueInstance>
+                    <PragmaticStatus></PragmaticStatus>
+                    <Source></Source>
+                    <Comment></Comment>
+                    <IntersectionsOfRelationChains id="">
+                        <ns5:Id></ns5:Id>
+                        <ns5:Name></ns5:Name>
+                        <ns5:Inherent></ns5:Inherent>
+                        <ns5:RelationChains id="">
+                            <ns6:language_representation_names></ns6:language_representation_names>
+                            <ns6:language_representation_names></ns6:language_representation_names>
+                            <ns6:language_representation_names></ns6:language_representation_names>
+                            <ns6:name></ns6:name>
+                            <ns6:relation>
+                                <ns7:relation id="">
+                                    <ns7:Id></ns7:Id>
+                                    <ns7:Comment></ns7:Comment>
+                                    <ns7:MainFunctions>
+                                        <ns8:relation_order></ns8:relation_order>
+                                    </ns7:MainFunctions>
+                                    <ns7:MainFunctions>
+                                        <ns8:relation_order></ns8:relation_order>
+                                    </ns7:MainFunctions>
+                                    <ns7:MainFunctions>
+                                        <ns8:relation_order></ns8:relation_order>
+                                    </ns7:MainFunctions>
+                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                        <ns9:backwardName></ns9:backwardName>
+                                        <ns9:forwardName></ns9:forwardName>
+                                    </ns7:Type>
+                                    <ns7:Object id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <RelationsContainingConceptAsObject id="">
+                                            <ns7:Id></ns7:Id>
+                                            <ns7:Comment></ns7:Comment>
+                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                <ns9:backwardName></ns9:backwardName>
+                                                <ns9:forwardName></ns9:forwardName>
+                                            </ns7:Type>
+                                            <ns7:Subject id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <RelationsContainingConceptAsSubject id="">
+                                                    <ns7:Id></ns7:Id>
+                                                    <ns7:Comment></ns7:Comment>
+                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                        <ns9:backwardName></ns9:backwardName>
+                                                        <ns9:forwardName></ns9:forwardName>
+                                                    </ns7:Type>
+                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                    <ns7:LanguageRepresentationSubject id="">
+                                                        <ns2:Id></ns2:Id>
+                                                        <ns2:Language></ns2:Language>
+                                                        <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                        <ns2:IsCompositional></ns2:IsCompositional>
+                                                        <ns2:Text></ns2:Text>
+                                                        <ns2:Comment></ns2:Comment>
+                                                        <ns2:RelationsWithLanguageRepresentationAsSubject id="">
+                                                            <ns7:Id></ns7:Id>
+                                                            <ns7:Comment></ns7:Comment>
+                                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                <ns9:backwardName></ns9:backwardName>
+                                                                <ns9:forwardName></ns9:forwardName>
+                                                            </ns7:Type>
+                                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                            <ns7:LanguageRepresentationObject id="">
+                                                                <ns2:Id></ns2:Id>
+                                                                <ns2:Language></ns2:Language>
+                                                                <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                <ns2:IsCompositional></ns2:IsCompositional>
+                                                                <ns2:Text></ns2:Text>
+                                                                <ns2:Comment></ns2:Comment>
+                                                                <ns2:RelationsWithLanguageRepresentationAsObject id="">
+                                                                    <ns7:Id></ns7:Id>
+                                                                    <ns7:Comment></ns7:Comment>
+                                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                    </ns7:Type>
+                                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                    <ns7:MotoricRepresentationSubject id="">
+                                                                        <ns4:Id></ns4:Id>
+                                                                        <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                        <ns4:URI></ns4:URI>
+                                                                        <ns4:Comment></ns4:Comment>
+                                                                        <ns4:RelationsWithMotoricRepresentationAsSubject id="">
+                                                                            <ns7:Id></ns7:Id>
+                                                                            <ns7:Comment></ns7:Comment>
+                                                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                                <ns9:backwardName></ns9:backwardName>
+                                                                                <ns9:forwardName></ns9:forwardName>
+                                                                            </ns7:Type>
+                                                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                            <ns7:MotoricRepresentationObject id="">
+                                                                                <ns4:Id></ns4:Id>
+                                                                                <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                                <ns4:URI></ns4:URI>
+                                                                                <ns4:Comment></ns4:Comment>
+                                                                                <ns4:RelationsWithMotoricRepresentationAsObject id="">
+                                                                                    <ns7:Id></ns7:Id>
+                                                                                    <ns7:Comment></ns7:Comment>
+                                                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                                    </ns7:Type>
+                                                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                                    <ns7:VisualRepresentationSubject id="">
+                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                        <ns3:uri></ns3:uri>
+                                                                                    </ns7:VisualRepresentationSubject>
+                                                                                    <ns7:VisualRepresentationSubject id="">
+                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                        <ns3:uri></ns3:uri>
+                                                                                    </ns7:VisualRepresentationSubject>
+                                                                                    <ns7:VisualRepresentationSubject id="">
+                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                        <ns3:uri></ns3:uri>
+                                                                                    </ns7:VisualRepresentationSubject>
+                                                                                    <ns7:VisualRepresentationObject id="">
+                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                        <ns3:uri></ns3:uri>
+                                                                                    </ns7:VisualRepresentationObject>
+                                                                                    <ns7:VisualRepresentationObject id="">
+                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                        <ns3:uri></ns3:uri>
+                                                                                    </ns7:VisualRepresentationObject>
+                                                                                    <ns7:VisualRepresentationObject id="">
+                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                        <ns3:uri></ns3:uri>
+                                                                                    </ns7:VisualRepresentationObject>
+                                                                                    <ns7:comment></ns7:comment>
+                                                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                                                    <ns7:motoric_representation_object></ns7:motoric_representation_object>
+                                                                                    <ns7:motoric_representation_object></ns7:motoric_representation_object>
+                                                                                    <ns7:motoric_representation_object></ns7:motoric_representation_object>
+                                                                                    <ns7:object id="" name="">
+                                                                                        <Id></Id>
+                                                                                        <Name></Name>
+                                                                                        <ConceptType></ConceptType>
+                                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                                        <Status></Status>
+                                                                                        <UniqueInstance></UniqueInstance>
+                                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                                        <Source></Source>
+                                                                                        <Comment></Comment>
+                                                                                        <comment></comment>
+                                                                                        <concept_type></concept_type>
+                                                                                        <ns5:intersection_of_relation_chains id="">
+                                                                                            <ns5:Id></ns5:Id>
+                                                                                            <ns5:Name></ns5:Name>
+                                                                                            <ns5:Inherent></ns5:Inherent>
+                                                                                            <ns5:Concept id="" name="">
+                                                                                                <Id></Id>
+                                                                                                <Name></Name>
+                                                                                                <ConceptType></ConceptType>
+                                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                                <Status></Status>
+                                                                                                <UniqueInstance></UniqueInstance>
+                                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                                <Source></Source>
+                                                                                                <Comment></Comment>
+                                                                                                <comment></comment>
+                                                                                                <concept_type></concept_type>
+                                                                                                <ns2:language_representation id="">
+                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                    <ns2:LanguageRepresentationRelationChains id="">
+                                                                                                        <ns6:name></ns6:name>
+                                                                                                    </ns2:LanguageRepresentationRelationChains>
+                                                                                                    <ns2:LanguageRepresentationRelationChains id="">
+                                                                                                        <ns6:name></ns6:name>
+                                                                                                    </ns2:LanguageRepresentationRelationChains>
+                                                                                                    <ns2:LanguageRepresentationRelationChains id="">
+                                                                                                        <ns6:name></ns6:name>
+                                                                                                    </ns2:LanguageRepresentationRelationChains>
+                                                                                                    <ns2:LanguageRepresentationIntersections id="">
+                                                                                                        <ns5:Id></ns5:Id>
+                                                                                                        <ns5:Name></ns5:Name>
+                                                                                                        <ns5:Inherent></ns5:Inherent>
+                                                                                                        <ns5:LanguageRepresentationNames id="">
+                                                                                                            <ns2:Id></ns2:Id>
+                                                                                                            <ns2:Language></ns2:Language>
+                                                                                                            <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                            <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                            <ns2:Text></ns2:Text>
+                                                                                                            <ns2:Comment></ns2:Comment>
+                                                                                                            <ns2:LanguageRepresentationConstituents id="">
+                                                                                                                <ns10:Id></ns10:Id>
+                                                                                                                <ns10:Order></ns10:Order>
+                                                                                                                <ns10:ConstituentLanguageRepresentation id="">
+                                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                                    <ns2:Constituents id="">
+                                                                                                                        <ns10:Id></ns10:Id>
+                                                                                                                        <ns10:Order></ns10:Order>
+                                                                                                                        <ns10:LanguageRepresentation id="">
+                                                                                                                            <ns2:Id></ns2:Id>
+                                                                                                                            <ns2:Language></ns2:Language>
+                                                                                                                            <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                            <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                            <ns2:Text></ns2:Text>
+                                                                                                                            <ns2:Comment></ns2:Comment>
+                                                                                                                            <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                            <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                            <ns2:constituents id="">
+                                                                                                                                <ns10:Id></ns10:Id>
+                                                                                                                                <ns10:Order></ns10:Order>
+                                                                                                                            </ns2:constituents>
+                                                                                                                            <ns2:constituents id="">
+                                                                                                                                <ns10:Id></ns10:Id>
+                                                                                                                                <ns10:Order></ns10:Order>
+                                                                                                                            </ns2:constituents>
+                                                                                                                            <ns2:constituents id="">
+                                                                                                                                <ns10:Id></ns10:Id>
+                                                                                                                                <ns10:Order></ns10:Order>
+                                                                                                                            </ns2:constituents>
+                                                                                                                            <ns2:language></ns2:language>
+                                                                                                                            <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                            <ns2:text></ns2:text>
+                                                                                                                        </ns10:LanguageRepresentation>
+                                                                                                                    </ns2:Constituents>
+                                                                                                                    <ns2:Constituents id="">
+                                                                                                                        <ns10:Id></ns10:Id>
+                                                                                                                        <ns10:Order></ns10:Order>
+                                                                                                                        <ns10:LanguageRepresentation id="">
+                                                                                                                            <ns2:Id></ns2:Id>
+                                                                                                                            <ns2:Language></ns2:Language>
+                                                                                                                            <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                            <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                            <ns2:Text></ns2:Text>
+                                                                                                                            <ns2:Comment></ns2:Comment>
+                                                                                                                            <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                            <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                            <ns2:language></ns2:language>
+                                                                                                                            <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                            <ns2:text></ns2:text>
+                                                                                                                        </ns10:LanguageRepresentation>
+                                                                                                                    </ns2:Constituents>
+                                                                                                                    <ns2:Constituents id="">
+                                                                                                                        <ns10:Id></ns10:Id>
+                                                                                                                        <ns10:Order></ns10:Order>
+                                                                                                                        <ns10:LanguageRepresentation id="">
+                                                                                                                            <ns2:Id></ns2:Id>
+                                                                                                                            <ns2:Language></ns2:Language>
+                                                                                                                            <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                            <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                            <ns2:Text></ns2:Text>
+                                                                                                                            <ns2:Comment></ns2:Comment>
+                                                                                                                            <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                            <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                            <ns2:language></ns2:language>
+                                                                                                                            <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                            <ns2:text></ns2:text>
+                                                                                                                        </ns10:LanguageRepresentation>
+                                                                                                                    </ns2:Constituents>
+                                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                    <ns2:language></ns2:language>
+                                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                    <ns2:text></ns2:text>
+                                                                                                                </ns10:ConstituentLanguageRepresentation>
+                                                                                                                <ns10:LanguageRepresentation id="">
+                                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                    <ns2:language></ns2:language>
+                                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                    <ns2:text></ns2:text>
+                                                                                                                </ns10:LanguageRepresentation>
+                                                                                                            </ns2:LanguageRepresentationConstituents>
+                                                                                                            <ns2:LanguageRepresentationConstituents id="">
+                                                                                                                <ns10:Id></ns10:Id>
+                                                                                                                <ns10:Order></ns10:Order>
+                                                                                                                <ns10:ConstituentLanguageRepresentation id="">
+                                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                    <ns2:language></ns2:language>
+                                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                    <ns2:text></ns2:text>
+                                                                                                                </ns10:ConstituentLanguageRepresentation>
+                                                                                                                <ns10:LanguageRepresentation id="">
+                                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                    <ns2:language></ns2:language>
+                                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                    <ns2:text></ns2:text>
+                                                                                                                </ns10:LanguageRepresentation>
+                                                                                                            </ns2:LanguageRepresentationConstituents>
+                                                                                                            <ns2:LanguageRepresentationConstituents id="">
+                                                                                                                <ns10:Id></ns10:Id>
+                                                                                                                <ns10:Order></ns10:Order>
+                                                                                                                <ns10:ConstituentLanguageRepresentation id="">
+                                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                    <ns2:language></ns2:language>
+                                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                    <ns2:text></ns2:text>
+                                                                                                                </ns10:ConstituentLanguageRepresentation>
+                                                                                                                <ns10:LanguageRepresentation id="">
+                                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                                    <ns2:language></ns2:language>
+                                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                                    <ns2:text></ns2:text>
+                                                                                                                </ns10:LanguageRepresentation>
+                                                                                                            </ns2:LanguageRepresentationConstituents>
+                                                                                                            <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                            <ns2:is_compositional></ns2:is_compositional>
+                                                                                                            <ns2:language></ns2:language>
+                                                                                                            <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                            <ns2:text></ns2:text>
+                                                                                                        </ns5:LanguageRepresentationNames>
+                                                                                                        <ns5:LanguageRepresentationNames id="">
+                                                                                                            <ns2:Id></ns2:Id>
+                                                                                                            <ns2:Language></ns2:Language>
+                                                                                                            <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                            <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                            <ns2:Text></ns2:Text>
+                                                                                                            <ns2:Comment></ns2:Comment>
+                                                                                                            <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                            <ns2:is_compositional></ns2:is_compositional>
+                                                                                                            <ns2:language></ns2:language>
+                                                                                                            <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                            <ns2:text></ns2:text>
+                                                                                                        </ns5:LanguageRepresentationNames>
+                                                                                                        <ns5:LanguageRepresentationNames id="">
+                                                                                                            <ns2:Id></ns2:Id>
+                                                                                                            <ns2:Language></ns2:Language>
+                                                                                                            <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                            <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                            <ns2:Text></ns2:Text>
+                                                                                                            <ns2:Comment></ns2:Comment>
+                                                                                                            <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                            <ns2:is_compositional></ns2:is_compositional>
+                                                                                                            <ns2:language></ns2:language>
+                                                                                                            <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                            <ns2:text></ns2:text>
+                                                                                                        </ns5:LanguageRepresentationNames>
+                                                                                                        <ns5:language_representation_names></ns5:language_representation_names>
+                                                                                                        <ns5:language_representation_names></ns5:language_representation_names>
+                                                                                                        <ns5:language_representation_names></ns5:language_representation_names>
+                                                                                                        <ns5:name></ns5:name>
+                                                                                                        <ns6:relation_chain id="">
+                                                                                                            <ns6:name></ns6:name>
+                                                                                                        </ns6:relation_chain>
+                                                                                                        <ns6:relation_chain id="">
+                                                                                                            <ns6:name></ns6:name>
+                                                                                                        </ns6:relation_chain>
+                                                                                                        <ns6:relation_chain id="">
+                                                                                                            <ns6:name></ns6:name>
+                                                                                                        </ns6:relation_chain>
+                                                                                                    </ns2:LanguageRepresentationIntersections>
+                                                                                                    <ns2:LanguageRepresentationIntersections id="">
+                                                                                                        <ns5:Id></ns5:Id>
+                                                                                                        <ns5:Name></ns5:Name>
+                                                                                                        <ns5:Inherent></ns5:Inherent>
+                                                                                                        <ns5:name></ns5:name>
+                                                                                                    </ns2:LanguageRepresentationIntersections>
+                                                                                                    <ns2:LanguageRepresentationIntersections id="">
+                                                                                                        <ns5:Id></ns5:Id>
+                                                                                                        <ns5:Name></ns5:Name>
+                                                                                                        <ns5:Inherent></ns5:Inherent>
+                                                                                                        <ns5:name></ns5:name>
+                                                                                                    </ns2:LanguageRepresentationIntersections>
+                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                    <ns2:language></ns2:language>
+                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                    <ns2:text></ns2:text>
+                                                                                                </ns2:language_representation>
+                                                                                                <ns2:language_representation id="">
+                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                    <ns2:language></ns2:language>
+                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                    <ns2:text></ns2:text>
+                                                                                                </ns2:language_representation>
+                                                                                                <ns2:language_representation id="">
+                                                                                                    <ns2:Id></ns2:Id>
+                                                                                                    <ns2:Language></ns2:Language>
+                                                                                                    <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                                                    <ns2:IsCompositional></ns2:IsCompositional>
+                                                                                                    <ns2:Text></ns2:Text>
+                                                                                                    <ns2:Comment></ns2:Comment>
+                                                                                                    <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                                                    <ns2:is_compositional></ns2:is_compositional>
+                                                                                                    <ns2:language></ns2:language>
+                                                                                                    <ns2:part_of_speech></ns2:part_of_speech>
+                                                                                                    <ns2:text></ns2:text>
+                                                                                                </ns2:language_representation>
+                                                                                                <ns4:motoric_representation id="">
+                                                                                                    <ns4:Id></ns4:Id>
+                                                                                                    <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                                                    <ns4:URI></ns4:URI>
+                                                                                                    <ns4:Comment></ns4:Comment>
+                                                                                                    <ns4:VisualRepresentations id="">
+                                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                                        <ns3:uri></ns3:uri>
+                                                                                                    </ns4:VisualRepresentations>
+                                                                                                    <ns4:VisualRepresentations id="">
+                                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                                        <ns3:uri></ns3:uri>
+                                                                                                    </ns4:VisualRepresentations>
+                                                                                                    <ns4:VisualRepresentations id="">
+                                                                                                        <ns3:media_type></ns3:media_type>
+                                                                                                        <ns3:visual_representation></ns3:visual_representation>
+                                                                                                        <ns3:uri></ns3:uri>
+                                                                                                    </ns4:VisualRepresentations>
+                                                                                                    <ns4:comment></ns4:comment>
+                                                                                                </ns4:motoric_representation>
+                                                                                                <ns4:motoric_representation id="">
+                                                                                                    <ns4:Id></ns4:Id>
+                                                                                                    <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                                                    <ns4:URI></ns4:URI>
+                                                                                                    <ns4:Comment></ns4:Comment>
+                                                                                                    <ns4:comment></ns4:comment>
+                                                                                                </ns4:motoric_representation>
+                                                                                                <ns4:motoric_representation id="">
+                                                                                                    <ns4:Id></ns4:Id>
+                                                                                                    <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                                                    <ns4:URI></ns4:URI>
+                                                                                                    <ns4:Comment></ns4:Comment>
+                                                                                                    <ns4:comment></ns4:comment>
+                                                                                                </ns4:motoric_representation>
+                                                                                                <pragmatic_status></pragmatic_status>
+                                                                                                <source></source>
+                                                                                                <specificity_level></specificity_level>
+                                                                                                <status></status>
+                                                                                                <unique_instance></unique_instance>
+                                                                                                <ns3:visual_representation id="">
+                                                                                                    <ns3:media_type></ns3:media_type>
+                                                                                                    <ns3:visual_representation></ns3:visual_representation>
+                                                                                                    <ns3:uri></ns3:uri>
+                                                                                                </ns3:visual_representation>
+                                                                                                <ns3:visual_representation id="">
+                                                                                                    <ns3:media_type></ns3:media_type>
+                                                                                                    <ns3:visual_representation></ns3:visual_representation>
+                                                                                                    <ns3:uri></ns3:uri>
+                                                                                                </ns3:visual_representation>
+                                                                                                <ns3:visual_representation id="">
+                                                                                                    <ns3:media_type></ns3:media_type>
+                                                                                                    <ns3:visual_representation></ns3:visual_representation>
+                                                                                                    <ns3:uri></ns3:uri>
+                                                                                                </ns3:visual_representation>
+                                                                                            </ns5:Concept>
+                                                                                            <ns5:name></ns5:name>
+                                                                                        </ns5:intersection_of_relation_chains>
+                                                                                        <ns5:intersection_of_relation_chains id="">
+                                                                                            <ns5:Id></ns5:Id>
+                                                                                            <ns5:Name></ns5:Name>
+                                                                                            <ns5:Inherent></ns5:Inherent>
+                                                                                            <ns5:Concept id="" name="">
+                                                                                                <Id></Id>
+                                                                                                <Name></Name>
+                                                                                                <ConceptType></ConceptType>
+                                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                                <Status></Status>
+                                                                                                <UniqueInstance></UniqueInstance>
+                                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                                <Source></Source>
+                                                                                                <Comment></Comment>
+                                                                                                <comment></comment>
+                                                                                                <concept_type></concept_type>
+                                                                                                <pragmatic_status></pragmatic_status>
+                                                                                                <source></source>
+                                                                                                <specificity_level></specificity_level>
+                                                                                                <status></status>
+                                                                                                <unique_instance></unique_instance>
+                                                                                            </ns5:Concept>
+                                                                                            <ns5:name></ns5:name>
+                                                                                        </ns5:intersection_of_relation_chains>
+                                                                                        <ns5:intersection_of_relation_chains id="">
+                                                                                            <ns5:Id></ns5:Id>
+                                                                                            <ns5:Name></ns5:Name>
+                                                                                            <ns5:Inherent></ns5:Inherent>
+                                                                                            <ns5:Concept id="" name="">
+                                                                                                <Id></Id>
+                                                                                                <Name></Name>
+                                                                                                <ConceptType></ConceptType>
+                                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                                <Status></Status>
+                                                                                                <UniqueInstance></UniqueInstance>
+                                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                                <Source></Source>
+                                                                                                <Comment></Comment>
+                                                                                                <comment></comment>
+                                                                                                <concept_type></concept_type>
+                                                                                                <pragmatic_status></pragmatic_status>
+                                                                                                <source></source>
+                                                                                                <specificity_level></specificity_level>
+                                                                                                <status></status>
+                                                                                                <unique_instance></unique_instance>
+                                                                                            </ns5:Concept>
+                                                                                            <ns5:name></ns5:name>
+                                                                                        </ns5:intersection_of_relation_chains>
+                                                                                        <pragmatic_status></pragmatic_status>
+                                                                                        <source></source>
+                                                                                        <specificity_level></specificity_level>
+                                                                                        <status></status>
+                                                                                        <unique_instance></unique_instance>
+                                                                                    </ns7:object>
+                                                                                    <ns7:subject id="" name="">
+                                                                                        <Id></Id>
+                                                                                        <Name></Name>
+                                                                                        <ConceptType></ConceptType>
+                                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                                        <Status></Status>
+                                                                                        <UniqueInstance></UniqueInstance>
+                                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                                        <Source></Source>
+                                                                                        <Comment></Comment>
+                                                                                        <comment></comment>
+                                                                                        <concept_type></concept_type>
+                                                                                        <pragmatic_status></pragmatic_status>
+                                                                                        <source></source>
+                                                                                        <specificity_level></specificity_level>
+                                                                                        <status></status>
+                                                                                        <unique_instance></unique_instance>
+                                                                                    </ns7:subject>
+                                                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                                    </ns9:relation_type>
+                                                                                </ns4:RelationsWithMotoricRepresentationAsObject>
+                                                                                <ns4:RelationsWithMotoricRepresentationAsObject id="">
+                                                                                    <ns7:Id></ns7:Id>
+                                                                                    <ns7:Comment></ns7:Comment>
+                                                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                                    </ns7:Type>
+                                                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                                    <ns7:comment></ns7:comment>
+                                                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                                                    <ns7:object id="" name="">
+                                                                                        <Id></Id>
+                                                                                        <Name></Name>
+                                                                                        <ConceptType></ConceptType>
+                                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                                        <Status></Status>
+                                                                                        <UniqueInstance></UniqueInstance>
+                                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                                        <Source></Source>
+                                                                                        <Comment></Comment>
+                                                                                        <comment></comment>
+                                                                                        <concept_type></concept_type>
+                                                                                        <pragmatic_status></pragmatic_status>
+                                                                                        <source></source>
+                                                                                        <specificity_level></specificity_level>
+                                                                                        <status></status>
+                                                                                        <unique_instance></unique_instance>
+                                                                                    </ns7:object>
+                                                                                    <ns7:subject id="" name="">
+                                                                                        <Id></Id>
+                                                                                        <Name></Name>
+                                                                                        <ConceptType></ConceptType>
+                                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                                        <Status></Status>
+                                                                                        <UniqueInstance></UniqueInstance>
+                                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                                        <Source></Source>
+                                                                                        <Comment></Comment>
+                                                                                        <comment></comment>
+                                                                                        <concept_type></concept_type>
+                                                                                        <pragmatic_status></pragmatic_status>
+                                                                                        <source></source>
+                                                                                        <specificity_level></specificity_level>
+                                                                                        <status></status>
+                                                                                        <unique_instance></unique_instance>
+                                                                                    </ns7:subject>
+                                                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                                    </ns9:relation_type>
+                                                                                </ns4:RelationsWithMotoricRepresentationAsObject>
+                                                                                <ns4:RelationsWithMotoricRepresentationAsObject id="">
+                                                                                    <ns7:Id></ns7:Id>
+                                                                                    <ns7:Comment></ns7:Comment>
+                                                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                                    </ns7:Type>
+                                                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                                    <ns7:comment></ns7:comment>
+                                                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                                                    <ns7:object id="" name="">
+                                                                                        <Id></Id>
+                                                                                        <Name></Name>
+                                                                                        <ConceptType></ConceptType>
+                                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                                        <Status></Status>
+                                                                                        <UniqueInstance></UniqueInstance>
+                                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                                        <Source></Source>
+                                                                                        <Comment></Comment>
+                                                                                        <comment></comment>
+                                                                                        <concept_type></concept_type>
+                                                                                        <pragmatic_status></pragmatic_status>
+                                                                                        <source></source>
+                                                                                        <specificity_level></specificity_level>
+                                                                                        <status></status>
+                                                                                        <unique_instance></unique_instance>
+                                                                                    </ns7:object>
+                                                                                    <ns7:subject id="" name="">
+                                                                                        <Id></Id>
+                                                                                        <Name></Name>
+                                                                                        <ConceptType></ConceptType>
+                                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                                        <Status></Status>
+                                                                                        <UniqueInstance></UniqueInstance>
+                                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                                        <Source></Source>
+                                                                                        <Comment></Comment>
+                                                                                        <comment></comment>
+                                                                                        <concept_type></concept_type>
+                                                                                        <pragmatic_status></pragmatic_status>
+                                                                                        <source></source>
+                                                                                        <specificity_level></specificity_level>
+                                                                                        <status></status>
+                                                                                        <unique_instance></unique_instance>
+                                                                                    </ns7:subject>
+                                                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                                    </ns9:relation_type>
+                                                                                </ns4:RelationsWithMotoricRepresentationAsObject>
+                                                                                <ns4:comment></ns4:comment>
+                                                                            </ns7:MotoricRepresentationObject>
+                                                                            <ns7:MotoricRepresentationObject id="">
+                                                                                <ns4:Id></ns4:Id>
+                                                                                <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                                <ns4:URI></ns4:URI>
+                                                                                <ns4:Comment></ns4:Comment>
+                                                                                <ns4:comment></ns4:comment>
+                                                                            </ns7:MotoricRepresentationObject>
+                                                                            <ns7:MotoricRepresentationObject id="">
+                                                                                <ns4:Id></ns4:Id>
+                                                                                <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                                <ns4:URI></ns4:URI>
+                                                                                <ns4:Comment></ns4:Comment>
+                                                                                <ns4:comment></ns4:comment>
+                                                                            </ns7:MotoricRepresentationObject>
+                                                                            <ns7:comment></ns7:comment>
+                                                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                                                            <ns7:object id="" name="">
+                                                                                <Id></Id>
+                                                                                <Name></Name>
+                                                                                <ConceptType></ConceptType>
+                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                <Status></Status>
+                                                                                <UniqueInstance></UniqueInstance>
+                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                <Source></Source>
+                                                                                <Comment></Comment>
+                                                                                <comment></comment>
+                                                                                <concept_type></concept_type>
+                                                                                <pragmatic_status></pragmatic_status>
+                                                                                <source></source>
+                                                                                <specificity_level></specificity_level>
+                                                                                <status></status>
+                                                                                <unique_instance></unique_instance>
+                                                                            </ns7:object>
+                                                                            <ns7:subject id="" name="">
+                                                                                <Id></Id>
+                                                                                <Name></Name>
+                                                                                <ConceptType></ConceptType>
+                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                <Status></Status>
+                                                                                <UniqueInstance></UniqueInstance>
+                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                <Source></Source>
+                                                                                <Comment></Comment>
+                                                                                <comment></comment>
+                                                                                <concept_type></concept_type>
+                                                                                <pragmatic_status></pragmatic_status>
+                                                                                <source></source>
+                                                                                <specificity_level></specificity_level>
+                                                                                <status></status>
+                                                                                <unique_instance></unique_instance>
+                                                                            </ns7:subject>
+                                                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                                <ns9:backwardName></ns9:backwardName>
+                                                                                <ns9:forwardName></ns9:forwardName>
+                                                                            </ns9:relation_type>
+                                                                        </ns4:RelationsWithMotoricRepresentationAsSubject>
+                                                                        <ns4:RelationsWithMotoricRepresentationAsSubject id="">
+                                                                            <ns7:Id></ns7:Id>
+                                                                            <ns7:Comment></ns7:Comment>
+                                                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                                <ns9:backwardName></ns9:backwardName>
+                                                                                <ns9:forwardName></ns9:forwardName>
+                                                                            </ns7:Type>
+                                                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                            <ns7:comment></ns7:comment>
+                                                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                                                            <ns7:object id="" name="">
+                                                                                <Id></Id>
+                                                                                <Name></Name>
+                                                                                <ConceptType></ConceptType>
+                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                <Status></Status>
+                                                                                <UniqueInstance></UniqueInstance>
+                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                <Source></Source>
+                                                                                <Comment></Comment>
+                                                                                <comment></comment>
+                                                                                <concept_type></concept_type>
+                                                                                <pragmatic_status></pragmatic_status>
+                                                                                <source></source>
+                                                                                <specificity_level></specificity_level>
+                                                                                <status></status>
+                                                                                <unique_instance></unique_instance>
+                                                                            </ns7:object>
+                                                                            <ns7:subject id="" name="">
+                                                                                <Id></Id>
+                                                                                <Name></Name>
+                                                                                <ConceptType></ConceptType>
+                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                <Status></Status>
+                                                                                <UniqueInstance></UniqueInstance>
+                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                <Source></Source>
+                                                                                <Comment></Comment>
+                                                                                <comment></comment>
+                                                                                <concept_type></concept_type>
+                                                                                <pragmatic_status></pragmatic_status>
+                                                                                <source></source>
+                                                                                <specificity_level></specificity_level>
+                                                                                <status></status>
+                                                                                <unique_instance></unique_instance>
+                                                                            </ns7:subject>
+                                                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                                <ns9:backwardName></ns9:backwardName>
+                                                                                <ns9:forwardName></ns9:forwardName>
+                                                                            </ns9:relation_type>
+                                                                        </ns4:RelationsWithMotoricRepresentationAsSubject>
+                                                                        <ns4:RelationsWithMotoricRepresentationAsSubject id="">
+                                                                            <ns7:Id></ns7:Id>
+                                                                            <ns7:Comment></ns7:Comment>
+                                                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                                <ns9:backwardName></ns9:backwardName>
+                                                                                <ns9:forwardName></ns9:forwardName>
+                                                                            </ns7:Type>
+                                                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                            <ns7:comment></ns7:comment>
+                                                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                                                            <ns7:object id="" name="">
+                                                                                <Id></Id>
+                                                                                <Name></Name>
+                                                                                <ConceptType></ConceptType>
+                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                <Status></Status>
+                                                                                <UniqueInstance></UniqueInstance>
+                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                <Source></Source>
+                                                                                <Comment></Comment>
+                                                                                <comment></comment>
+                                                                                <concept_type></concept_type>
+                                                                                <pragmatic_status></pragmatic_status>
+                                                                                <source></source>
+                                                                                <specificity_level></specificity_level>
+                                                                                <status></status>
+                                                                                <unique_instance></unique_instance>
+                                                                            </ns7:object>
+                                                                            <ns7:subject id="" name="">
+                                                                                <Id></Id>
+                                                                                <Name></Name>
+                                                                                <ConceptType></ConceptType>
+                                                                                <SpecificityLevel></SpecificityLevel>
+                                                                                <Status></Status>
+                                                                                <UniqueInstance></UniqueInstance>
+                                                                                <PragmaticStatus></PragmaticStatus>
+                                                                                <Source></Source>
+                                                                                <Comment></Comment>
+                                                                                <comment></comment>
+                                                                                <concept_type></concept_type>
+                                                                                <pragmatic_status></pragmatic_status>
+                                                                                <source></source>
+                                                                                <specificity_level></specificity_level>
+                                                                                <status></status>
+                                                                                <unique_instance></unique_instance>
+                                                                            </ns7:subject>
+                                                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                                <ns9:backwardName></ns9:backwardName>
+                                                                                <ns9:forwardName></ns9:forwardName>
+                                                                            </ns9:relation_type>
+                                                                        </ns4:RelationsWithMotoricRepresentationAsSubject>
+                                                                        <ns4:comment></ns4:comment>
+                                                                    </ns7:MotoricRepresentationSubject>
+                                                                    <ns7:MotoricRepresentationSubject id="">
+                                                                        <ns4:Id></ns4:Id>
+                                                                        <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                        <ns4:URI></ns4:URI>
+                                                                        <ns4:Comment></ns4:Comment>
+                                                                        <ns4:comment></ns4:comment>
+                                                                    </ns7:MotoricRepresentationSubject>
+                                                                    <ns7:MotoricRepresentationSubject id="">
+                                                                        <ns4:Id></ns4:Id>
+                                                                        <ns4:PerformingAgent></ns4:PerformingAgent>
+                                                                        <ns4:URI></ns4:URI>
+                                                                        <ns4:Comment></ns4:Comment>
+                                                                        <ns4:comment></ns4:comment>
+                                                                    </ns7:MotoricRepresentationSubject>
+                                                                    <ns7:comment></ns7:comment>
+                                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                                    <ns7:object id="" name="">
+                                                                        <Id></Id>
+                                                                        <Name></Name>
+                                                                        <ConceptType></ConceptType>
+                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                        <Status></Status>
+                                                                        <UniqueInstance></UniqueInstance>
+                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                        <Source></Source>
+                                                                        <Comment></Comment>
+                                                                        <comment></comment>
+                                                                        <concept_type></concept_type>
+                                                                        <pragmatic_status></pragmatic_status>
+                                                                        <source></source>
+                                                                        <specificity_level></specificity_level>
+                                                                        <status></status>
+                                                                        <unique_instance></unique_instance>
+                                                                    </ns7:object>
+                                                                    <ns7:subject id="" name="">
+                                                                        <Id></Id>
+                                                                        <Name></Name>
+                                                                        <ConceptType></ConceptType>
+                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                        <Status></Status>
+                                                                        <UniqueInstance></UniqueInstance>
+                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                        <Source></Source>
+                                                                        <Comment></Comment>
+                                                                        <comment></comment>
+                                                                        <concept_type></concept_type>
+                                                                        <pragmatic_status></pragmatic_status>
+                                                                        <source></source>
+                                                                        <specificity_level></specificity_level>
+                                                                        <status></status>
+                                                                        <unique_instance></unique_instance>
+                                                                    </ns7:subject>
+                                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                    </ns9:relation_type>
+                                                                </ns2:RelationsWithLanguageRepresentationAsObject>
+                                                                <ns2:RelationsWithLanguageRepresentationAsObject id="">
+                                                                    <ns7:Id></ns7:Id>
+                                                                    <ns7:Comment></ns7:Comment>
+                                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                    </ns7:Type>
+                                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                    <ns7:comment></ns7:comment>
+                                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                                    <ns7:object id="" name="">
+                                                                        <Id></Id>
+                                                                        <Name></Name>
+                                                                        <ConceptType></ConceptType>
+                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                        <Status></Status>
+                                                                        <UniqueInstance></UniqueInstance>
+                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                        <Source></Source>
+                                                                        <Comment></Comment>
+                                                                        <comment></comment>
+                                                                        <concept_type></concept_type>
+                                                                        <pragmatic_status></pragmatic_status>
+                                                                        <source></source>
+                                                                        <specificity_level></specificity_level>
+                                                                        <status></status>
+                                                                        <unique_instance></unique_instance>
+                                                                    </ns7:object>
+                                                                    <ns7:subject id="" name="">
+                                                                        <Id></Id>
+                                                                        <Name></Name>
+                                                                        <ConceptType></ConceptType>
+                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                        <Status></Status>
+                                                                        <UniqueInstance></UniqueInstance>
+                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                        <Source></Source>
+                                                                        <Comment></Comment>
+                                                                        <comment></comment>
+                                                                        <concept_type></concept_type>
+                                                                        <pragmatic_status></pragmatic_status>
+                                                                        <source></source>
+                                                                        <specificity_level></specificity_level>
+                                                                        <status></status>
+                                                                        <unique_instance></unique_instance>
+                                                                    </ns7:subject>
+                                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                    </ns9:relation_type>
+                                                                </ns2:RelationsWithLanguageRepresentationAsObject>
+                                                                <ns2:RelationsWithLanguageRepresentationAsObject id="">
+                                                                    <ns7:Id></ns7:Id>
+                                                                    <ns7:Comment></ns7:Comment>
+                                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                    </ns7:Type>
+                                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                                    <ns7:comment></ns7:comment>
+                                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                                    <ns7:object id="" name="">
+                                                                        <Id></Id>
+                                                                        <Name></Name>
+                                                                        <ConceptType></ConceptType>
+                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                        <Status></Status>
+                                                                        <UniqueInstance></UniqueInstance>
+                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                        <Source></Source>
+                                                                        <Comment></Comment>
+                                                                        <comment></comment>
+                                                                        <concept_type></concept_type>
+                                                                        <pragmatic_status></pragmatic_status>
+                                                                        <source></source>
+                                                                        <specificity_level></specificity_level>
+                                                                        <status></status>
+                                                                        <unique_instance></unique_instance>
+                                                                    </ns7:object>
+                                                                    <ns7:subject id="" name="">
+                                                                        <Id></Id>
+                                                                        <Name></Name>
+                                                                        <ConceptType></ConceptType>
+                                                                        <SpecificityLevel></SpecificityLevel>
+                                                                        <Status></Status>
+                                                                        <UniqueInstance></UniqueInstance>
+                                                                        <PragmaticStatus></PragmaticStatus>
+                                                                        <Source></Source>
+                                                                        <Comment></Comment>
+                                                                        <comment></comment>
+                                                                        <concept_type></concept_type>
+                                                                        <pragmatic_status></pragmatic_status>
+                                                                        <source></source>
+                                                                        <specificity_level></specificity_level>
+                                                                        <status></status>
+                                                                        <unique_instance></unique_instance>
+                                                                    </ns7:subject>
+                                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                        <ns9:backwardName></ns9:backwardName>
+                                                                        <ns9:forwardName></ns9:forwardName>
+                                                                    </ns9:relation_type>
+                                                                </ns2:RelationsWithLanguageRepresentationAsObject>
+                                                                <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                <ns2:is_compositional></ns2:is_compositional>
+                                                                <ns2:language></ns2:language>
+                                                                <ns2:part_of_speech></ns2:part_of_speech>
+                                                                <ns2:text></ns2:text>
+                                                            </ns7:LanguageRepresentationObject>
+                                                            <ns7:LanguageRepresentationObject id="">
+                                                                <ns2:Id></ns2:Id>
+                                                                <ns2:Language></ns2:Language>
+                                                                <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                <ns2:IsCompositional></ns2:IsCompositional>
+                                                                <ns2:Text></ns2:Text>
+                                                                <ns2:Comment></ns2:Comment>
+                                                                <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                <ns2:is_compositional></ns2:is_compositional>
+                                                                <ns2:language></ns2:language>
+                                                                <ns2:part_of_speech></ns2:part_of_speech>
+                                                                <ns2:text></ns2:text>
+                                                            </ns7:LanguageRepresentationObject>
+                                                            <ns7:LanguageRepresentationObject id="">
+                                                                <ns2:Id></ns2:Id>
+                                                                <ns2:Language></ns2:Language>
+                                                                <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                                <ns2:IsCompositional></ns2:IsCompositional>
+                                                                <ns2:Text></ns2:Text>
+                                                                <ns2:Comment></ns2:Comment>
+                                                                <ns2:Compositionality id=""></ns2:Compositionality>
+                                                                <ns2:is_compositional></ns2:is_compositional>
+                                                                <ns2:language></ns2:language>
+                                                                <ns2:part_of_speech></ns2:part_of_speech>
+                                                                <ns2:text></ns2:text>
+                                                            </ns7:LanguageRepresentationObject>
+                                                            <ns7:comment></ns7:comment>
+                                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                                            <ns7:object id="" name="">
+                                                                <Id></Id>
+                                                                <Name></Name>
+                                                                <ConceptType></ConceptType>
+                                                                <SpecificityLevel></SpecificityLevel>
+                                                                <Status></Status>
+                                                                <UniqueInstance></UniqueInstance>
+                                                                <PragmaticStatus></PragmaticStatus>
+                                                                <Source></Source>
+                                                                <Comment></Comment>
+                                                                <comment></comment>
+                                                                <concept_type></concept_type>
+                                                                <pragmatic_status></pragmatic_status>
+                                                                <source></source>
+                                                                <specificity_level></specificity_level>
+                                                                <status></status>
+                                                                <unique_instance></unique_instance>
+                                                            </ns7:object>
+                                                            <ns7:subject id="" name="">
+                                                                <Id></Id>
+                                                                <Name></Name>
+                                                                <ConceptType></ConceptType>
+                                                                <SpecificityLevel></SpecificityLevel>
+                                                                <Status></Status>
+                                                                <UniqueInstance></UniqueInstance>
+                                                                <PragmaticStatus></PragmaticStatus>
+                                                                <Source></Source>
+                                                                <Comment></Comment>
+                                                                <comment></comment>
+                                                                <concept_type></concept_type>
+                                                                <pragmatic_status></pragmatic_status>
+                                                                <source></source>
+                                                                <specificity_level></specificity_level>
+                                                                <status></status>
+                                                                <unique_instance></unique_instance>
+                                                            </ns7:subject>
+                                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                <ns9:backwardName></ns9:backwardName>
+                                                                <ns9:forwardName></ns9:forwardName>
+                                                            </ns9:relation_type>
+                                                        </ns2:RelationsWithLanguageRepresentationAsSubject>
+                                                        <ns2:RelationsWithLanguageRepresentationAsSubject id="">
+                                                            <ns7:Id></ns7:Id>
+                                                            <ns7:Comment></ns7:Comment>
+                                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                <ns9:backwardName></ns9:backwardName>
+                                                                <ns9:forwardName></ns9:forwardName>
+                                                            </ns7:Type>
+                                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                            <ns7:comment></ns7:comment>
+                                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                                            <ns7:object id="" name="">
+                                                                <Id></Id>
+                                                                <Name></Name>
+                                                                <ConceptType></ConceptType>
+                                                                <SpecificityLevel></SpecificityLevel>
+                                                                <Status></Status>
+                                                                <UniqueInstance></UniqueInstance>
+                                                                <PragmaticStatus></PragmaticStatus>
+                                                                <Source></Source>
+                                                                <Comment></Comment>
+                                                                <comment></comment>
+                                                                <concept_type></concept_type>
+                                                                <pragmatic_status></pragmatic_status>
+                                                                <source></source>
+                                                                <specificity_level></specificity_level>
+                                                                <status></status>
+                                                                <unique_instance></unique_instance>
+                                                            </ns7:object>
+                                                            <ns7:subject id="" name="">
+                                                                <Id></Id>
+                                                                <Name></Name>
+                                                                <ConceptType></ConceptType>
+                                                                <SpecificityLevel></SpecificityLevel>
+                                                                <Status></Status>
+                                                                <UniqueInstance></UniqueInstance>
+                                                                <PragmaticStatus></PragmaticStatus>
+                                                                <Source></Source>
+                                                                <Comment></Comment>
+                                                                <comment></comment>
+                                                                <concept_type></concept_type>
+                                                                <pragmatic_status></pragmatic_status>
+                                                                <source></source>
+                                                                <specificity_level></specificity_level>
+                                                                <status></status>
+                                                                <unique_instance></unique_instance>
+                                                            </ns7:subject>
+                                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                <ns9:backwardName></ns9:backwardName>
+                                                                <ns9:forwardName></ns9:forwardName>
+                                                            </ns9:relation_type>
+                                                        </ns2:RelationsWithLanguageRepresentationAsSubject>
+                                                        <ns2:RelationsWithLanguageRepresentationAsSubject id="">
+                                                            <ns7:Id></ns7:Id>
+                                                            <ns7:Comment></ns7:Comment>
+                                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                                <ns9:backwardName></ns9:backwardName>
+                                                                <ns9:forwardName></ns9:forwardName>
+                                                            </ns7:Type>
+                                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                            <ns7:comment></ns7:comment>
+                                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                                            <ns7:object id="" name="">
+                                                                <Id></Id>
+                                                                <Name></Name>
+                                                                <ConceptType></ConceptType>
+                                                                <SpecificityLevel></SpecificityLevel>
+                                                                <Status></Status>
+                                                                <UniqueInstance></UniqueInstance>
+                                                                <PragmaticStatus></PragmaticStatus>
+                                                                <Source></Source>
+                                                                <Comment></Comment>
+                                                                <comment></comment>
+                                                                <concept_type></concept_type>
+                                                                <pragmatic_status></pragmatic_status>
+                                                                <source></source>
+                                                                <specificity_level></specificity_level>
+                                                                <status></status>
+                                                                <unique_instance></unique_instance>
+                                                            </ns7:object>
+                                                            <ns7:subject id="" name="">
+                                                                <Id></Id>
+                                                                <Name></Name>
+                                                                <ConceptType></ConceptType>
+                                                                <SpecificityLevel></SpecificityLevel>
+                                                                <Status></Status>
+                                                                <UniqueInstance></UniqueInstance>
+                                                                <PragmaticStatus></PragmaticStatus>
+                                                                <Source></Source>
+                                                                <Comment></Comment>
+                                                                <comment></comment>
+                                                                <concept_type></concept_type>
+                                                                <pragmatic_status></pragmatic_status>
+                                                                <source></source>
+                                                                <specificity_level></specificity_level>
+                                                                <status></status>
+                                                                <unique_instance></unique_instance>
+                                                            </ns7:subject>
+                                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                                <ns9:backwardName></ns9:backwardName>
+                                                                <ns9:forwardName></ns9:forwardName>
+                                                            </ns9:relation_type>
+                                                        </ns2:RelationsWithLanguageRepresentationAsSubject>
+                                                        <ns2:Compositionality id=""></ns2:Compositionality>
+                                                        <ns2:is_compositional></ns2:is_compositional>
+                                                        <ns2:language></ns2:language>
+                                                        <ns2:part_of_speech></ns2:part_of_speech>
+                                                        <ns2:text></ns2:text>
+                                                    </ns7:LanguageRepresentationSubject>
+                                                    <ns7:LanguageRepresentationSubject id="">
+                                                        <ns2:Id></ns2:Id>
+                                                        <ns2:Language></ns2:Language>
+                                                        <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                        <ns2:IsCompositional></ns2:IsCompositional>
+                                                        <ns2:Text></ns2:Text>
+                                                        <ns2:Comment></ns2:Comment>
+                                                        <ns2:Compositionality id=""></ns2:Compositionality>
+                                                        <ns2:is_compositional></ns2:is_compositional>
+                                                        <ns2:language></ns2:language>
+                                                        <ns2:part_of_speech></ns2:part_of_speech>
+                                                        <ns2:text></ns2:text>
+                                                    </ns7:LanguageRepresentationSubject>
+                                                    <ns7:LanguageRepresentationSubject id="">
+                                                        <ns2:Id></ns2:Id>
+                                                        <ns2:Language></ns2:Language>
+                                                        <ns2:PartOfSpeech></ns2:PartOfSpeech>
+                                                        <ns2:IsCompositional></ns2:IsCompositional>
+                                                        <ns2:Text></ns2:Text>
+                                                        <ns2:Comment></ns2:Comment>
+                                                        <ns2:Compositionality id=""></ns2:Compositionality>
+                                                        <ns2:is_compositional></ns2:is_compositional>
+                                                        <ns2:language></ns2:language>
+                                                        <ns2:part_of_speech></ns2:part_of_speech>
+                                                        <ns2:text></ns2:text>
+                                                    </ns7:LanguageRepresentationSubject>
+                                                    <ns7:comment></ns7:comment>
+                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                    <ns7:object id="" name="">
+                                                        <Id></Id>
+                                                        <Name></Name>
+                                                        <ConceptType></ConceptType>
+                                                        <SpecificityLevel></SpecificityLevel>
+                                                        <Status></Status>
+                                                        <UniqueInstance></UniqueInstance>
+                                                        <PragmaticStatus></PragmaticStatus>
+                                                        <Source></Source>
+                                                        <Comment></Comment>
+                                                        <comment></comment>
+                                                        <concept_type></concept_type>
+                                                        <pragmatic_status></pragmatic_status>
+                                                        <source></source>
+                                                        <specificity_level></specificity_level>
+                                                        <status></status>
+                                                        <unique_instance></unique_instance>
+                                                    </ns7:object>
+                                                    <ns7:subject id="" name="">
+                                                        <Id></Id>
+                                                        <Name></Name>
+                                                        <ConceptType></ConceptType>
+                                                        <SpecificityLevel></SpecificityLevel>
+                                                        <Status></Status>
+                                                        <UniqueInstance></UniqueInstance>
+                                                        <PragmaticStatus></PragmaticStatus>
+                                                        <Source></Source>
+                                                        <Comment></Comment>
+                                                        <comment></comment>
+                                                        <concept_type></concept_type>
+                                                        <pragmatic_status></pragmatic_status>
+                                                        <source></source>
+                                                        <specificity_level></specificity_level>
+                                                        <status></status>
+                                                        <unique_instance></unique_instance>
+                                                    </ns7:subject>
+                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                        <ns9:backwardName></ns9:backwardName>
+                                                        <ns9:forwardName></ns9:forwardName>
+                                                    </ns9:relation_type>
+                                                </RelationsContainingConceptAsSubject>
+                                                <RelationsContainingConceptAsSubject id="">
+                                                    <ns7:Id></ns7:Id>
+                                                    <ns7:Comment></ns7:Comment>
+                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                        <ns9:backwardName></ns9:backwardName>
+                                                        <ns9:forwardName></ns9:forwardName>
+                                                    </ns7:Type>
+                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                    <ns7:comment></ns7:comment>
+                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                    <ns7:object id="" name="">
+                                                        <Id></Id>
+                                                        <Name></Name>
+                                                        <ConceptType></ConceptType>
+                                                        <SpecificityLevel></SpecificityLevel>
+                                                        <Status></Status>
+                                                        <UniqueInstance></UniqueInstance>
+                                                        <PragmaticStatus></PragmaticStatus>
+                                                        <Source></Source>
+                                                        <Comment></Comment>
+                                                        <comment></comment>
+                                                        <concept_type></concept_type>
+                                                        <pragmatic_status></pragmatic_status>
+                                                        <source></source>
+                                                        <specificity_level></specificity_level>
+                                                        <status></status>
+                                                        <unique_instance></unique_instance>
+                                                    </ns7:object>
+                                                    <ns7:subject id="" name="">
+                                                        <Id></Id>
+                                                        <Name></Name>
+                                                        <ConceptType></ConceptType>
+                                                        <SpecificityLevel></SpecificityLevel>
+                                                        <Status></Status>
+                                                        <UniqueInstance></UniqueInstance>
+                                                        <PragmaticStatus></PragmaticStatus>
+                                                        <Source></Source>
+                                                        <Comment></Comment>
+                                                        <comment></comment>
+                                                        <concept_type></concept_type>
+                                                        <pragmatic_status></pragmatic_status>
+                                                        <source></source>
+                                                        <specificity_level></specificity_level>
+                                                        <status></status>
+                                                        <unique_instance></unique_instance>
+                                                    </ns7:subject>
+                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                        <ns9:backwardName></ns9:backwardName>
+                                                        <ns9:forwardName></ns9:forwardName>
+                                                    </ns9:relation_type>
+                                                </RelationsContainingConceptAsSubject>
+                                                <RelationsContainingConceptAsSubject id="">
+                                                    <ns7:Id></ns7:Id>
+                                                    <ns7:Comment></ns7:Comment>
+                                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                        <ns9:backwardName></ns9:backwardName>
+                                                        <ns9:forwardName></ns9:forwardName>
+                                                    </ns7:Type>
+                                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                                    <ns7:comment></ns7:comment>
+                                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                                    <ns7:object id="" name="">
+                                                        <Id></Id>
+                                                        <Name></Name>
+                                                        <ConceptType></ConceptType>
+                                                        <SpecificityLevel></SpecificityLevel>
+                                                        <Status></Status>
+                                                        <UniqueInstance></UniqueInstance>
+                                                        <PragmaticStatus></PragmaticStatus>
+                                                        <Source></Source>
+                                                        <Comment></Comment>
+                                                        <comment></comment>
+                                                        <concept_type></concept_type>
+                                                        <pragmatic_status></pragmatic_status>
+                                                        <source></source>
+                                                        <specificity_level></specificity_level>
+                                                        <status></status>
+                                                        <unique_instance></unique_instance>
+                                                    </ns7:object>
+                                                    <ns7:subject id="" name="">
+                                                        <Id></Id>
+                                                        <Name></Name>
+                                                        <ConceptType></ConceptType>
+                                                        <SpecificityLevel></SpecificityLevel>
+                                                        <Status></Status>
+                                                        <UniqueInstance></UniqueInstance>
+                                                        <PragmaticStatus></PragmaticStatus>
+                                                        <Source></Source>
+                                                        <Comment></Comment>
+                                                        <comment></comment>
+                                                        <concept_type></concept_type>
+                                                        <pragmatic_status></pragmatic_status>
+                                                        <source></source>
+                                                        <specificity_level></specificity_level>
+                                                        <status></status>
+                                                        <unique_instance></unique_instance>
+                                                    </ns7:subject>
+                                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                        <ns9:backwardName></ns9:backwardName>
+                                                        <ns9:forwardName></ns9:forwardName>
+                                                    </ns9:relation_type>
+                                                </RelationsContainingConceptAsSubject>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:Subject>
+                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                            <ns7:comment></ns7:comment>
+                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                            <ns7:object id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:object>
+                                            <ns7:subject id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:subject>
+                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                <ns9:backwardName></ns9:backwardName>
+                                                <ns9:forwardName></ns9:forwardName>
+                                            </ns9:relation_type>
+                                        </RelationsContainingConceptAsObject>
+                                        <RelationsContainingConceptAsObject id="">
+                                            <ns7:Id></ns7:Id>
+                                            <ns7:Comment></ns7:Comment>
+                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                <ns9:backwardName></ns9:backwardName>
+                                                <ns9:forwardName></ns9:forwardName>
+                                            </ns7:Type>
+                                            <ns7:Subject id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:Subject>
+                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                            <ns7:comment></ns7:comment>
+                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                            <ns7:object id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:object>
+                                            <ns7:subject id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:subject>
+                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                <ns9:backwardName></ns9:backwardName>
+                                                <ns9:forwardName></ns9:forwardName>
+                                            </ns9:relation_type>
+                                        </RelationsContainingConceptAsObject>
+                                        <RelationsContainingConceptAsObject id="">
+                                            <ns7:Id></ns7:Id>
+                                            <ns7:Comment></ns7:Comment>
+                                            <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                                <ns9:backwardName></ns9:backwardName>
+                                                <ns9:forwardName></ns9:forwardName>
+                                            </ns7:Type>
+                                            <ns7:Subject id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:Subject>
+                                            <ns7:DerivationSupported></ns7:DerivationSupported>
+                                            <ns7:comment></ns7:comment>
+                                            <ns7:language_representation_object></ns7:language_representation_object>
+                                            <ns7:object id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:object>
+                                            <ns7:subject id="" name="">
+                                                <Id></Id>
+                                                <Name></Name>
+                                                <ConceptType></ConceptType>
+                                                <SpecificityLevel></SpecificityLevel>
+                                                <Status></Status>
+                                                <UniqueInstance></UniqueInstance>
+                                                <PragmaticStatus></PragmaticStatus>
+                                                <Source></Source>
+                                                <Comment></Comment>
+                                                <comment></comment>
+                                                <concept_type></concept_type>
+                                                <pragmatic_status></pragmatic_status>
+                                                <source></source>
+                                                <specificity_level></specificity_level>
+                                                <status></status>
+                                                <unique_instance></unique_instance>
+                                            </ns7:subject>
+                                            <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                                <ns9:backwardName></ns9:backwardName>
+                                                <ns9:forwardName></ns9:forwardName>
+                                            </ns9:relation_type>
+                                        </RelationsContainingConceptAsObject>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:Object>
+                                    <ns7:Subject id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:Subject>
+                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                    <ns7:comment></ns7:comment>
+                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                    <ns7:object id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:object>
+                                    <ns7:subject id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:subject>
+                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                        <ns9:backwardName></ns9:backwardName>
+                                        <ns9:forwardName></ns9:forwardName>
+                                    </ns9:relation_type>
+                                </ns7:relation>
+                                <ns8:relation_order></ns8:relation_order>
+                            </ns6:relation>
+                            <ns6:relation>
+                                <ns7:relation id="">
+                                    <ns7:Id></ns7:Id>
+                                    <ns7:Comment></ns7:Comment>
+                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                        <ns9:backwardName></ns9:backwardName>
+                                        <ns9:forwardName></ns9:forwardName>
+                                    </ns7:Type>
+                                    <ns7:Object id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:Object>
+                                    <ns7:Subject id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:Subject>
+                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                    <ns7:comment></ns7:comment>
+                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                    <ns7:object id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:object>
+                                    <ns7:subject id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:subject>
+                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                        <ns9:backwardName></ns9:backwardName>
+                                        <ns9:forwardName></ns9:forwardName>
+                                    </ns9:relation_type>
+                                </ns7:relation>
+                                <ns8:relation_order></ns8:relation_order>
+                            </ns6:relation>
+                            <ns6:relation>
+                                <ns7:relation id="">
+                                    <ns7:Id></ns7:Id>
+                                    <ns7:Comment></ns7:Comment>
+                                    <ns7:Type right-to-left_name="" left-to-right_name="" id="">
+                                        <ns9:backwardName></ns9:backwardName>
+                                        <ns9:forwardName></ns9:forwardName>
+                                    </ns7:Type>
+                                    <ns7:Object id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:Object>
+                                    <ns7:Subject id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:Subject>
+                                    <ns7:DerivationSupported></ns7:DerivationSupported>
+                                    <ns7:comment></ns7:comment>
+                                    <ns7:language_representation_object></ns7:language_representation_object>
+                                    <ns7:object id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:object>
+                                    <ns7:subject id="" name="">
+                                        <Id></Id>
+                                        <Name></Name>
+                                        <ConceptType></ConceptType>
+                                        <SpecificityLevel></SpecificityLevel>
+                                        <Status></Status>
+                                        <UniqueInstance></UniqueInstance>
+                                        <PragmaticStatus></PragmaticStatus>
+                                        <Source></Source>
+                                        <Comment></Comment>
+                                        <comment></comment>
+                                        <concept_type></concept_type>
+                                        <pragmatic_status></pragmatic_status>
+                                        <source></source>
+                                        <specificity_level></specificity_level>
+                                        <status></status>
+                                        <unique_instance></unique_instance>
+                                    </ns7:subject>
+                                    <ns9:relation_type right-to-left_name="" left-to-right_name="" id="">
+                                        <ns9:backwardName></ns9:backwardName>
+                                        <ns9:forwardName></ns9:forwardName>
+                                    </ns9:relation_type>
+                                </ns7:relation>
+                                <ns8:relation_order></ns8:relation_order>
+                            </ns6:relation>
+                        </ns5:RelationChains>
+                        <ns5:RelationChains id="">
+                            <ns6:name></ns6:name>
+                        </ns5:RelationChains>
+                        <ns5:RelationChains id="">
+                            <ns6:name></ns6:name>
+                        </ns5:RelationChains>
+                        <ns5:Concept id="" name="">
+                            <Id></Id>
+                            <Name></Name>
+                            <ConceptType></ConceptType>
+                            <SpecificityLevel></SpecificityLevel>
+                            <Status></Status>
+                            <UniqueInstance></UniqueInstance>
+                            <PragmaticStatus></PragmaticStatus>
+                            <Source></Source>
+                            <Comment></Comment>
+                            <comment></comment>
+                            <concept_type></concept_type>
+                            <pragmatic_status></pragmatic_status>
+                            <source></source>
+                            <specificity_level></specificity_level>
+                            <status></status>
+                            <unique_instance></unique_instance>
+                        </ns5:Concept>
+                        <ns5:name></ns5:name>
+                    </IntersectionsOfRelationChains>
+                    <IntersectionsOfRelationChains id="">
+                        <ns5:Id></ns5:Id>
+                        <ns5:Name></ns5:Name>
+                        <ns5:Inherent></ns5:Inherent>
+                        <ns5:Concept id="" name="">
+                            <Id></Id>
+                            <Name></Name>
+                            <ConceptType></ConceptType>
+                            <SpecificityLevel></SpecificityLevel>
+                            <Status></Status>
+                            <UniqueInstance></UniqueInstance>
+                            <PragmaticStatus></PragmaticStatus>
+                            <Source></Source>
+                            <Comment></Comment>
+                            <comment></comment>
+                            <concept_type></concept_type>
+                            <pragmatic_status></pragmatic_status>
+                            <source></source>
+                            <specificity_level></specificity_level>
+                            <status></status>
+                            <unique_instance></unique_instance>
+                        </ns5:Concept>
+                        <ns5:name></ns5:name>
+                    </IntersectionsOfRelationChains>
+                    <IntersectionsOfRelationChains id="">
+                        <ns5:Id></ns5:Id>
+                        <ns5:Name></ns5:Name>
+                        <ns5:Inherent></ns5:Inherent>
+                        <ns5:Concept id="" name="">
+                            <Id></Id>
+                            <Name></Name>
+                            <ConceptType></ConceptType>
+                            <SpecificityLevel></SpecificityLevel>
+                            <Status></Status>
+                            <UniqueInstance></UniqueInstance>
+                            <PragmaticStatus></PragmaticStatus>
+                            <Source></Source>
+                            <Comment></Comment>
+                            <comment></comment>
+                            <concept_type></concept_type>
+                            <pragmatic_status></pragmatic_status>
+                            <source></source>
+                            <specificity_level></specificity_level>
+                            <status></status>
+                            <unique_instance></unique_instance>
+                        </ns5:Concept>
+                        <ns5:name></ns5:name>
+                    </IntersectionsOfRelationChains>
+                    <comment></comment>
+                    <concept_type></concept_type>
+                    <pragmatic_status></pragmatic_status>
+                    <source></source>
+                    <specificity_level></specificity_level>
+                    <status></status>
+                    <unique_instance></unique_instance>
+                </ns4:Concept>
+                <ns4:comment></ns4:comment>
+            </MotoricRepresentations>
+            <MotoricRepresentations id="">
+                <ns4:Id></ns4:Id>
+                <ns4:PerformingAgent></ns4:PerformingAgent>
+                <ns4:URI></ns4:URI>
+                <ns4:Comment></ns4:Comment>
+                <ns4:Concept id="" name="">
+                    <Id></Id>
+                    <Name></Name>
+                    <ConceptType></ConceptType>
+                    <SpecificityLevel></SpecificityLevel>
+                    <Status></Status>
+                    <UniqueInstance></UniqueInstance>
+                    <PragmaticStatus></PragmaticStatus>
+                    <Source></Source>
+                    <Comment></Comment>
+                    <comment></comment>
+                    <concept_type></concept_type>
+                    <pragmatic_status></pragmatic_status>
+                    <source></source>
+                    <specificity_level></specificity_level>
+                    <status></status>
+                    <unique_instance></unique_instance>
+                </ns4:Concept>
+                <ns4:comment></ns4:comment>
+            </MotoricRepresentations>
+            <MotoricRepresentations id="">
+                <ns4:Id></ns4:Id>
+                <ns4:PerformingAgent></ns4:PerformingAgent>
+                <ns4:URI></ns4:URI>
+                <ns4:Comment></ns4:Comment>
+                <ns4:Concept id="" name="">
+                    <Id></Id>
+                    <Name></Name>
+                    <ConceptType></ConceptType>
+                    <SpecificityLevel></SpecificityLevel>
+                    <Status></Status>
+                    <UniqueInstance></UniqueInstance>
+                    <PragmaticStatus></PragmaticStatus>
+                    <Source></Source>
+                    <Comment></Comment>
+                    <comment></comment>
+                    <concept_type></concept_type>
+                    <pragmatic_status></pragmatic_status>
+                    <source></source>
+                    <specificity_level></specificity_level>
+                    <status></status>
+                    <unique_instance></unique_instance>
+                </ns4:Concept>
+                <ns4:comment></ns4:comment>
+            </MotoricRepresentations>
+            <comment></comment>
+            <concept_type></concept_type>
+            <pragmatic_status></pragmatic_status>
+            <source></source>
+            <specificity_level></specificity_level>
+            <status></status>
+            <unique_instance></unique_instance>
+        </ns2:Concepts>
+        <ns2:Concepts id="" name="">
+            <Id></Id>
+            <Name></Name>
+            <ConceptType></ConceptType>
+            <SpecificityLevel></SpecificityLevel>
+            <Status></Status>
+            <UniqueInstance></UniqueInstance>
+            <PragmaticStatus></PragmaticStatus>
+            <Source></Source>
+            <Comment></Comment>
+            <comment></comment>
+            <concept_type></concept_type>
+            <pragmatic_status></pragmatic_status>
+            <source></source>
+            <specificity_level></specificity_level>
+            <status></status>
+            <unique_instance></unique_instance>
+        </ns2:Concepts>
+        <ns2:Concepts id="" name="">
+            <Id></Id>
+            <Name></Name>
+            <ConceptType></ConceptType>
+            <SpecificityLevel></SpecificityLevel>
+            <Status></Status>
+            <UniqueInstance></UniqueInstance>
+            <PragmaticStatus></PragmaticStatus>
+            <Source></Source>
+            <Comment></Comment>
+            <comment></comment>
+            <concept_type></concept_type>
+            <pragmatic_status></pragmatic_status>
+            <source></source>
+            <specificity_level></specificity_level>
+            <status></status>
+            <unique_instance></unique_instance>
+        </ns2:Concepts>
+        <ns2:Compositionality id=""></ns2:Compositionality>
+        <ns2:is_compositional></ns2:is_compositional>
+        <ns2:language></ns2:language>
+        <ns2:part_of_speech></ns2:part_of_speech>
+        <ns2:text></ns2:text>
+    </LanguageRepresentations>
+    <LanguageRepresentations id="">
+        <ns2:Id></ns2:Id>
+        <ns2:Language></ns2:Language>
+        <ns2:PartOfSpeech></ns2:PartOfSpeech>
+        <ns2:IsCompositional></ns2:IsCompositional>
+        <ns2:Text></ns2:Text>
+        <ns2:Comment></ns2:Comment>
+        <ns2:Compositionality id=""></ns2:Compositionality>
+        <ns2:is_compositional></ns2:is_compositional>
+        <ns2:language></ns2:language>
+        <ns2:part_of_speech></ns2:part_of_speech>
+        <ns2:text></ns2:text>
+    </LanguageRepresentations>
+    <LanguageRepresentations id="">
+        <ns2:Id></ns2:Id>
+        <ns2:Language></ns2:Language>
+        <ns2:PartOfSpeech></ns2:PartOfSpeech>
+        <ns2:IsCompositional></ns2:IsCompositional>
+        <ns2:Text></ns2:Text>
+        <ns2:Comment></ns2:Comment>
+        <ns2:Compositionality id=""></ns2:Compositionality>
+        <ns2:is_compositional></ns2:is_compositional>
+        <ns2:language></ns2:language>
+        <ns2:part_of_speech></ns2:part_of_speech>
+        <ns2:text></ns2:text>
+    </LanguageRepresentations>
+    <comment></comment>
+    <concept_type></concept_type>
+    <pragmatic_status></pragmatic_status>
+    <source></source>
+    <specificity_level></specificity_level>
+    <status></status>
+    <unique_instance></unique_instance>
+
+</ns1:concept>
