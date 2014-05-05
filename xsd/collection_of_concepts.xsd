@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.csri.gr" targetNamespace="http://www.csri.gr/collection_of_concepts" version="1.0">
-
-  <xs:import namespace="http://www.csri.gr" schemaLocation="schema14.xsd"/>
-
-  <xs:element name="collection" type="ns1:collectionOfConcepts"/>
-
-</xs:schema>
