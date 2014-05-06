@@ -54,11 +54,11 @@ import javax.xml.bind.annotation.XmlType;
     @NamedQuery(name = "findConceptsByLanguageRepresentation",
             query =
             "SELECT c FROM Concept c " +
-                    "WHERE c.LanguageRepresentations.Text LIKE :lr_name"),
+            "WHERE c.LanguageRepresentations.Text LIKE :lr_name"),
     @NamedQuery(name = "findConceptsByLanguageRepresentationExact",
             query =
             "SELECT c FROM Concept c " +
-                    "WHERE c.LanguageRepresentations.Text = :lr_name"),})
+            "WHERE c.LanguageRepresentations.Text = :lr_name"),})
 @Table(name = "Concepts")
 //@ConceptConstraint(groups=ConceptGroup.class)
 public class Concept implements Serializable {
@@ -613,8 +613,8 @@ public class Concept implements Serializable {
      * concept participates in"
      */
     //@XmlElement(name="intersection_of_relation_chains")
-    public final List<IntersectionOfRelationChains> 
-        getIntersectionsOfRelationChains() {
+    public final List<IntersectionOfRelationChains>
+            getIntersectionsOfRelationChains() {
         return IntersectionsOfRelationChains;
     }
 

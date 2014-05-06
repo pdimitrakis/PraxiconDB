@@ -34,7 +34,8 @@ import javax.xml.bind.annotation.XmlType;
  *
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "visual_representation", namespace = "http://www.csri.gr/visual_representation")
+@XmlType(name = "visual_representation", namespace =
+        "http://www.csri.gr/visual_representation")
 @Entity
 @Table(name = "VisualRepresentations")
 public class VisualRepresentation implements Serializable {
@@ -51,9 +52,9 @@ public class VisualRepresentation implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @SequenceGenerator(name="CUST_SEQ", allocationSize=1)
-    @GeneratedValue(strategy = GenerationType.AUTO, generator="CUST_SEQ")
-    @Column(name="VisualRepresentationId")
+    @SequenceGenerator(name = "CUST_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "CUST_SEQ")
+    @Column(name = "VisualRepresentationId")
     private Long Id;
 
     @Column(name = "MediaType")
@@ -109,8 +110,7 @@ public class VisualRepresentation implements Serializable {
      * defines the type of the media that represents visually the entity
      */
     //@XmlElement(name = "media_type")
-    public media_type getMediaType()
-    {
+    public media_type getMediaType() {
         return MediaType;
     }
 
@@ -124,8 +124,7 @@ public class VisualRepresentation implements Serializable {
      * the URI of the media."
      */
     //@XmlElement(name = "uri")
-    public URI getURI()
-    {
+    public URI getURI() {
         return URI;
     }
 
@@ -138,10 +137,9 @@ public class VisualRepresentation implements Serializable {
             this.URI = URI.resolve(uri);
         }
     }
-    
+
     //@XmlElement(name = "visual_representation")
-    public String getRepresentation()
-    {
+    public String getRepresentation() {
         return Representation;
     }
 
