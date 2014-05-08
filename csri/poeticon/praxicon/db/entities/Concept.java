@@ -186,11 +186,17 @@ public class Concept implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "Concept")
     private List<IntersectionOfRelationChains> IntersectionsOfRelationChains;
 
+    /*
+     Relations that have "this" concept as Object.
+     */
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "Object")
-    private List<Relation> RelationsContainingConceptAsObject; //Relations that have "this" concept as Object.
+    private List<Relation> RelationsContainingConceptAsObject;
 
+    /*
+     Relations that have "this" concept as Subject.
+     */
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "Subject")
-    private List<Relation> RelationsContainingConceptAsSubject; //Relations that have "this" concept as Subject.
+    private List<Relation> RelationsContainingConceptAsSubject;
 
     // Public Constructor
     public Concept() {
@@ -380,8 +386,8 @@ public class Concept implements Serializable {
 
     /**
      * @return @xmlcomments.args xmltag="&lt;unique_instance&gt;"
-     *         xmldescription="This tag defines the source of the concept (from which
-     *         resources was generated (for example: Wordnet)"
+     *         xmldescription="This tag defines the source of the concept
+     *         (from which resources was generated (for example: Wordnet)"
      */
     //@XmlElement(name="unique_instance")
     public unique_instance getUniqueInstance() {
@@ -416,8 +422,8 @@ public class Concept implements Serializable {
 
     /**
      * @return @xmlcomments.args xmltag="&lt;source&gt;" xmldescription="This
-     *         tag defines the source of the concept (from which resources was generated
-     *         (for example: Wordnet)"
+     *         tag defines the source of the concept (from which resources
+     *         was generated (for example: Wordnet)"
      */
     //@XmlElement(name="source")
     public String getSource() {
