@@ -95,6 +95,7 @@ public class VisualRepresentation implements Serializable {
     private List<Relation> RelationsWithVisualRepresentationAsObject;
 
     @ManyToOne(cascade = CascadeType.ALL)
+    @XmlIDREF
     private MotoricRepresentation MotoricRepresentation;
 
     public VisualRepresentation(media_type media_type, String representation) {
@@ -106,6 +107,7 @@ public class VisualRepresentation implements Serializable {
     }
 
     /**
+     * @return the media type of the visual representation
      * @xmlcomments.args xmltag="&lt;media_type&gt;" xmldescription="This tag
      * defines the type of the media that represents visually the entity
      */
@@ -193,10 +195,7 @@ public class VisualRepresentation implements Serializable {
                 (this.Id != null && !this.Id.equals(other.Id))) {
             return false;
         }
-        if (this.Id == null && other.Id == null) {
-            return false;
-        }
-        return true;
+        return this.Id != null || other.Id != null;
     }
 
     @Override
