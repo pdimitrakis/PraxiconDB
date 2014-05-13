@@ -95,7 +95,6 @@ public class VisualRepresentation implements Serializable {
     private List<Relation> RelationsWithVisualRepresentationAsObject;
 
     @ManyToOne(cascade = CascadeType.ALL)
-    @XmlIDREF
     private MotoricRepresentation MotoricRepresentation;
 
     public VisualRepresentation(media_type media_type, String representation) {
