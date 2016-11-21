@@ -4,7 +4,6 @@
  */
 package gr.csri.poeticon.praxicon.db.entities;
 
-import static gr.csri.poeticon.praxicon.EntityMngFactory.getEntityManager;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -14,7 +13,6 @@ import static java.util.Objects.isNull;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EntityManager;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
@@ -34,8 +32,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
-import org.hibernate.Hibernate;
-import org.hibernate.Session;
 
 /**
  *
@@ -694,16 +690,9 @@ public class Concept implements Serializable {
      *
      */
     public final List<LanguageRepresentation> getLanguageRepresentations() {
-        EntityManager em = getEntityManager();
-        Session session = em.unwrap(org.hibernate.Session.class);
         List<LanguageRepresentation> lrs = new ArrayList<>();
         for (Concept_LanguageRepresentation clr
                 : getConceptLanguageRepresentationsEntries()) {
-            if (!isNull(clr.getId())) {
-                if (!session.contains(clr)) {
-                    session.update(clr);
-                }
-            }
             lrs.add(clr.getLanguageRepresentation());
         }
         return new ArrayList<>(lrs);
@@ -718,8 +707,7 @@ public class Concept implements Serializable {
      */
     public final List<Concept_LanguageRepresentation>
             getConceptLanguageRepresentation() {
-        Hibernate.initialize(languageRepresentations);
-        return new ArrayList<>(languageRepresentations);
+        return languageRepresentations;
     }
 
     public void setConcept_LanguageRepresentation(
@@ -804,15 +792,10 @@ public class Concept implements Serializable {
      *         Representations of the Concept.
      */
     public List<String> getLanguageRepresentationsNames() {
-        EntityManager em = getEntityManager();
-        Session session = em.unwrap(org.hibernate.Session.class);
         List<LanguageRepresentation> lrs = this.getLanguageRepresentations();
         List<String> lrNames = new ArrayList<>();
         if (!lrs.isEmpty()) {
             for (LanguageRepresentation lr : lrs) {
-                if (!session.contains(lr)) {
-                    session.saveOrUpdate(lr);
-                }
                 lrNames.add(lr.getText());
             }
             Collections.sort(lrNames);
@@ -829,10 +812,8 @@ public class Concept implements Serializable {
      *         Representations of the Concept.
      */
     public List<String> getLanguageRepresentationsAndRepresentative() {
-        EntityManager em = getEntityManager();
-        Session session = em.unwrap(org.hibernate.Session.class);
         List<Concept_LanguageRepresentation> clrs = this.
-                getConceptLanguageRepresentationsEntries();
+                getConceptLanguageRepresentation();
         List<String> lrNamesAndRepresentative = new ArrayList<>();
         if (!clrs.isEmpty()) {
             for (Concept_LanguageRepresentation clr : clrs) {
@@ -1074,8 +1055,8 @@ public class Concept implements Serializable {
          * Also, implement the Comparable interface for LanguageRepresentation
          * to make implementation cleaner.
          */
-        if (!(this.getConceptLanguageRepresentation().isEmpty()) || (other.
-                getLanguageRepresentationsAndRepresentative().isEmpty())) {
+        if (!this.getLanguageRepresentations().isEmpty() &&
+                !other.getLanguageRepresentations().isEmpty()) {
             if (!this.getLanguageRepresentationsAndRepresentative().toString().
                     equals(other.getLanguageRepresentationsAndRepresentative().
                             toString())) {

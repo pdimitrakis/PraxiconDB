@@ -23,9 +23,7 @@ import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import org.hibernate.Session;
 
 /**
  *
@@ -584,21 +582,10 @@ public class ConceptDaoImpl extends JpaDao<Long, Concept> implements
      */
     @Override
     public List<Concept> getAllOffsprings(Concept concept) {
-        EntityManager em = getEntityManager();
-        Session session = em.unwrap(org.hibernate.Session.class);
-
         List<Concept> offspringConcepts = new ArrayList<>();
         List<Concept> children = getChildren(concept);
 
         for (Concept child : children) {
-            /*
-             * Check if child is contained in the active session and save it
-             * if it's not.
-             */
-            if (!session.contains(child)) {
-                session.save(child);
-            }
-
             if (!offspringConcepts.contains(child)) {
                 offspringConcepts.add(child);
             }
