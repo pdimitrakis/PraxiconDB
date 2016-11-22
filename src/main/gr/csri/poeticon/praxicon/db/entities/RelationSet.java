@@ -34,6 +34,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import org.apache.commons.lang3.StringUtils;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 /**
  *
@@ -97,11 +99,13 @@ public class RelationSet implements Serializable {
     @Column(name = "Name")
     private String name;
 
+    @Fetch(FetchMode.SELECT)
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "relationSet", fetch =
             FetchType.EAGER)
     private List<RelationSet_Relation> relations;
 
     @XmlElement(name = "languageRepresentation")
+    @Fetch(FetchMode.SELECT)
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
             name = "LanguageRepresentation_RelationSet",
@@ -112,10 +116,12 @@ public class RelationSet implements Serializable {
     )
     private List<LanguageRepresentation> languageRepresentations;
 
+    @Fetch(FetchMode.SELECT)
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "relationSet", fetch =
             FetchType.EAGER)
     private List<VisualRepresentation> visualRepresentations;
 
+    @Fetch(FetchMode.SELECT)
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "relationSet", fetch =
             FetchType.EAGER)
     private List<MotoricRepresentation> motoricRepresentations;

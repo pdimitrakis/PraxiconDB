@@ -32,6 +32,8 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 /**
  *
@@ -308,6 +310,7 @@ public class Concept implements Serializable {
     @Column(name = "Comment")
     private String comment;
 
+    @Fetch(FetchMode.SELECT)
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
             name = "OntologicalDomain_Concept",
@@ -318,14 +321,17 @@ public class Concept implements Serializable {
     )
     private List<OntologicalDomain> ontologicalDomains;
 
+    @Fetch(FetchMode.SELECT)
     @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "concept", fetch =
             FetchType.EAGER)
     private List<Concept_LanguageRepresentation> languageRepresentations;
 
+    @Fetch(FetchMode.SELECT)
     @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "concept", fetch =
             FetchType.EAGER)
     private List<VisualRepresentation> visualRepresentations;
 
+    @Fetch(FetchMode.SELECT)
     @OneToMany(cascade = {CascadeType.ALL}, mappedBy = "concept", fetch =
             FetchType.EAGER)
     private List<MotoricRepresentation> motoricRepresentations;
