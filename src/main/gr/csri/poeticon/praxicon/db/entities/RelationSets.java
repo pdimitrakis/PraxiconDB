@@ -184,12 +184,12 @@ public class RelationSets {
 
             for (RelationSet rsc : relationSetCandidates) {
                 boolean foundMatch = false;
-                //only check if they have same number of relations
+                // Only check if they have same number of relations
                 if (rsc.getRelationsList().size() == newRelationSet.
                         getRelationsList().size()) {
                     foundMatch = true;
-                    //check if each relation of rscand also belongs to 
-                    //newRelationSet
+                    // Check if each relation of rscand also belongs to 
+                    // newRelationSet
                     for (Relation relation : rsc.getRelationsList()) {
                         boolean foundRelation = false;
                         for (Relation newRelation : newRelationSet.
@@ -233,7 +233,7 @@ public class RelationSets {
         if (foundLanguageRepresentations) {
             for (LanguageRepresentation retrievedLanguageRepresentation
                     : retrievedLanguageRepresentations) {
-                //check if already assigned to relationset
+                // Check if already assigned to relationset
                 if (!newRelationSet.getLanguageRepresentations().
                         contains(retrievedLanguageRepresentation)) {
                     newRelationSet.addLanguageRepresentation(
@@ -246,7 +246,7 @@ public class RelationSets {
             for (MotoricRepresentation mr : relationSet.
                     getMotoricRepresentations()) {
                 mr.setRelationSet(newRelationSet);
-                //check if already assigned to relationset
+                // Check if already assigned to relationset
                 if (!newRelationSet.getMotoricRepresentations().contains(mr)) {
                     newRelationSet.addMotoricRepresentation(mr);
                 }
@@ -257,7 +257,7 @@ public class RelationSets {
             for (VisualRepresentation vr : relationSet.
                     getVisualRepresentations()) {
                 vr.setRelationSet(newRelationSet);
-                //check if already assigned to relationset
+                // Check if already assigned to relationset
                 if (!newRelationSet.getVisualRepresentations().contains(vr)) {
                     newRelationSet.addVisualRepresentation(vr);
                 }
